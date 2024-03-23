@@ -48,8 +48,9 @@ class Header extends HTMLElement {
         margin-top: 20px;
       }
       .header {
+        top:0;
         z-index: 100;
-        position:fixed !important;
+        position:fixed;
         width: 100%;
         height: 45px;
       }
