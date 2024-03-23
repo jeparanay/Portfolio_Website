@@ -49,7 +49,7 @@ class Header extends HTMLElement {
       }
       .header {
         z-index: 100;
-        position:fixed;
+        position:fixed !important;
         width: 100%;
         height: 45px;
       }
