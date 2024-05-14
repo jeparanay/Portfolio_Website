@@ -517,8 +517,19 @@ about page
 }
 
 
+/**********************
+Creative Feed 
+***********************/
 
-
+#disappear{
+	position: absolute;
+  	top: 70px;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+	color: #c1c1c1;
+	text-align: center;
+	font-size: 10pt;
+}
 
 
 
@@ -543,6 +554,30 @@ MEDIA QUERIES
 
 }
 
+
+@media (min-width: 992px) {
+	#scroll-section {
+		display: block;
+	}
+	
+	.fullscreen-vid {
+		height: 100vh;
+	}
+	.fullscreen-img {
+		height: 100vh;
+	}
+	
+	.display-4 {
+		font-size: 3.5rem!important;
+	}
+	
+	.projects-push-down {
+		margin-top: 250px;
+		margin-bottom: 250px;
+	}
+	}
+
+
 @media screen and (min-width:573px) {
 .col {
 	max-width: auto;
@@ -553,27 +588,15 @@ MEDIA QUERIES
 }
 }
 
-@media (min-width: 992px) {
-#scroll-section {
-	display: block;
+
+@media screen and (max-width: 470px) {
+	.disappear{
+		display:none;
+	}
+
 }
 
-.fullscreen-vid {
-	height: 100vh;
-}
-.fullscreen-img {
-    height: 100vh;
-}
 
-.display-4 {
-	font-size: 3.5rem!important;
-}
-
-.projects-push-down {
-	margin-top: 250px;
-	margin-bottom: 250px;
-}
-}
 
 
 /****************

@@ -66,6 +66,11 @@ class Header extends HTMLElement {
         border-bottom: 0px;
       }
 
+      .header h6 a:hover {
+        color: #568056;
+        border-bottom: 0px;
+      }
+
       .header a:hover{
         text-decoration: none;
         color:#568056;
@@ -157,14 +162,14 @@ class Header extends HTMLElement {
       </style>
       <header class="header">
   			<div class="moveover">
-        <h1 class="h6"><strong>Julia Paranay</strong></h1>
+        <h1 class="h6"><strong><a href="index.html">Julia Paranay</a></strong></h1>
   			<nav class='hamburgernav'>
   				<ul>
   					<li> <a href="index.html">Design Work</a> </li>
             <!-- <li> <a href="gdprojects.html">Other Projects</a></li> -->
             <li> <a href="feed.html">Creative Feed</a> </li>
             <li> <a href="about.html">About Me</a> </li>
-            <li> <a href="images/resume/Resume_Julia_Paranay_2024.pdf" target="_blank">Resume</a></li>
+            <li> <a href="images/resume/Julia_Paranay_Resume.pdf" target="_blank">Resume</a></li>
   				</ul>
   			</nav>
         </div>
@@ -182,9 +187,13 @@ customElements.define('header-component', Header);
 
 var active = 0;
 for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href === document.URL) {
+    // Check if the link is not within an h6 element
+    if (!document.links[i].closest('h1') && document.links[i].href === document.URL) {
         active = i;
     }
 }
 
-  document.links[active].className = 'selected';
+// Apply the 'selected' class to the link if it's not within an h6 element
+if (!document.links[active].closest('h1')) {
+    document.links[active].className = 'selected';
+}
