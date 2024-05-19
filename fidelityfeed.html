@@ -1,223 +1,417 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>Julia Paranay's Portfolio Website</title>
-    <meta name="viewport" content="width=device-width"> <!-- Corrects device width for Mobile -->
-	  <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Julia Paranay's Portfolio Website</title>
+    <meta name="viewport" content="width=device-width" />
+    <!-- Corrects device width for Mobile -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <!-- Header Component -->
+    <header-component></header-component>
 
-<!-- Header Component -->
-  	<header-component></header-component>
-
-<!-- Scroll Section -->
+    <!-- Scroll Section -->
     <div id="scroll-section" class="scroll">
       <div id="scrolldown">
         <a href="#main"><span></span>Scroll</a>
       </div>
     </div>
 
-<!-- Background Vid/Image -->
-    <video class="fullscreen-vid" width="100%" height="auto" autoplay muted loop>
-      <source src="images/fidelity_feed/backgrounds5.mp4" type="video/mp4">
+    <!-- Background Vid/Image -->
+    <video
+      class="fullscreen-vid"
+      width="100%"
+      height="auto"
+      autoplay
+      muted
+      loop
+    >
+      <source src="images/fidelity_feed/backgrounds5.mp4" type="video/mp4" />
     </video>
 
-<!-- Main Content -->
+    <!-- Main Content -->
     <main id="main" class="pt-5 container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-xl-6">
           <h2 class="text-center pb-3">The Fidelity Feed</h2>
           <p class="pb-3">
-            During my time working at Fidelity Investments, my team launched a redesign of the Fidelity mobile app. Through this re-design we solved
-            problems caused by the complexity of the original app and made it more intuitive for our users.
-            The previous homescreen was known as a point of confusion. We spent countless hours brainstorming, whiteboarding, sketching,
-            and user testing until we found a solution that worked. In the end, we created the first ever Feed for a financial app, The Fidelity Feed.
+            During my time working at Fidelity Investments, my team launched a
+            redesign of the Fidelity mobile app. Through this re-design we
+            solved problems caused by the complexity of the original app and
+            made it more intuitive for our users. The previous homescreen was
+            known as a point of confusion. We spent countless hours
+            brainstorming, whiteboarding, sketching, and user testing until we
+            found a solution that worked. In the end, we created the first ever
+            Feed for a financial app, The Fidelity Feed.
           </p>
           <p class="pb-3">
-            As design lead, I met with our business team to figure
-            out project goals and requirements, held brainstorm and whiteboarding sessions, brought
-            concepts from sketches and wireframes to final designs, worked out the
-            functionality, the look and feel of the experience, built out prototypes to test specific
-            interactions, user tested our designs, delivered specs, and worked with developers to ensure
-            a pixel perfect product.
+            As design lead, I met with our business team to figure out project
+            goals and requirements, held brainstorm and whiteboarding sessions,
+            brought concepts from sketches and wireframes to final designs,
+            worked out the functionality, the look and feel of the experience,
+            built out prototypes to test specific interactions, user tested our
+            designs, delivered specs, and worked with developers to ensure a
+            pixel perfect product.
           </p>
           <p class="pb-3">
-            The feed is an ever-growing project and will be frequently updated and improved upon.
-            Check it out by downloading the app on your mobile device.
+            The feed is an ever-growing project and will be frequently updated
+            and improved upon. Check it out by downloading the app on your
+            mobile device.
           </p>
 
           <div class="links text-center mb-5">
             <ul>
-              <li><a href="https://itunes.apple.com/us/app/fidelity-investments/id348177453?mt=8">Fidelity on Itunes</a></li>
-              <li><a href="https://play.google.com/store/apps/details?id=com.fidelity.android&hl=en">Fidelity on the Google Play Store</a></li>
+              <li>
+                <a
+                  href="https://itunes.apple.com/us/app/fidelity-investments/id348177453?mt=8"
+                  >Fidelity on Itunes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.fidelity.android&hl=en"
+                  >Fidelity on the Google Play Store</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </div>
 
-<!-- Single Image -->
-        <div class="row">
-          <div class="offset-md-1 col-12 col-md-10 pb-5">
-            <img alt="feed" src="images/fidelity_feed/cover.jpg"/>
-          </div>
+      <!-- Single Image -->
+      <div class="row">
+        <div class="offset-md-1 col-12 col-md-10 pb-5">
+          <img alt="feed" src="images/fidelity_feed/cover.jpg" />
         </div>
+      </div>
 
-<!-- Section Intro Text -->
-        <div class="row justify-content-center pb-5">
-          <div class="col-12 col-md-8 col-xl-6">
-            <h3 class="text-center mb-3">Feed Process</h3>
-            <p>
-              From design thinking sessions, my initial pencil sketches, wireframes, prototyping and user testing,
-              we perfected the experience for our users. Below you can see some image captures of the process.
-            </p>
-          </div>
+      <!-- Section Intro Text -->
+      <div class="row justify-content-center pb-5">
+        <div class="col-12 col-md-8 col-xl-6">
+          <h3 class="text-center mb-3">Feed Process</h3>
+          <p>
+            From design thinking sessions, my initial pencil sketches,
+            wireframes, prototyping and user testing, we perfected the
+            experience for our users. Below you can see some image captures of
+            the process.
+          </p>
         </div>
+      </div>
 
-<!-- Single Image -->
-        <div class="row">
-          <div class="offset-md-1 col-12 col-md-10 pb-5">
-            <img draggable="false" alt="feed" src="images/fidelity_feed/fid-process.jpg"/>
-          </div>
+      <!-- Single Image -->
+      <div class="row">
+        <div class="offset-md-1 col-12 col-md-10 pb-5">
+          <img
+            draggable="false"
+            alt="feed"
+            src="images/fidelity_feed/fid-process.jpg"
+          />
         </div>
+      </div>
 
-<!-- Single Image -->
-        <div class="row">
-          <div class="offset-md-1 col-12 col-md-10 pb-5">
-            <img class="box-shadow" draggable="false" alt="feed" src="images/fidelity_feed/wire.png"/>
-          </div>
+      <!-- Single Image -->
+      <div class="row">
+        <div class="offset-md-1 col-12 col-md-10 pb-5">
+          <img
+            class="box-shadow"
+            draggable="false"
+            alt="feed"
+            src="images/fidelity_feed/wire.png"
+          />
         </div>
+      </div>
 
-<!-- Section Intro Text -->
-        <div class="row justify-content-center pt-5 pb-5 light-blue-bkg">
-          <div class="col-12 col-md-8 col-xl-6">
-            <h3 class="text-center mb-3">The Final Feed Cards</h3>
-            <p>
-              The final set of feed cards can be grouped into a few different categories.
-              We have the Markets cards, balance updates, news cards, event cards, bull &
-              bear of the day, learning cards, as well as our marketing cards. The cards are
-              catered to our users and our algorithms help us bubble specific cards to the top
-              of our users feed.
-            </p>
-          </div>
+      <!-- Section Intro Text -->
+      <div class="row justify-content-center pt-5 pb-5 light-blue-bkg">
+        <div class="col-12 col-md-8 col-xl-6">
+          <h3 class="text-center mb-3">The Final Feed Cards</h3>
+          <p>
+            The final set of feed cards can be grouped into a few different
+            categories. We have the Markets cards, balance updates, news cards,
+            event cards, bull & bear of the day, learning cards, as well as our
+            marketing cards. The cards are catered to our users and our
+            algorithms help us bubble specific cards to the top of our users
+            feed.
+          </p>
         </div>
+      </div>
 
-<!-- Side By Side -->
-        <div class="row justify-content-center light-blue-bkg pb-5">
-          <div class="col-4 col-md-3">
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-4.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-1.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-2.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-3.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-18.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-5.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-6.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-7.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-9.jpg"/>
-          </div>
-          <div class="col-4 col-md-3">
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-10.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-11.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-12.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-13.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-14.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-15.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-16.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-17.jpg"/>
-          </div>
-          <div class="col-4 col-md-3">
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-19.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-20.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-21.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-22.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-23.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-8.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-24.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-25.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-26.jpg"/>
-            <img class="box-shadow mb-3" draggable="false" alt="feed-card" src="images/fidelity_feed/feed-card-27.jpg"/>
-          </div>
+      <!-- Side By Side -->
+      <div class="row justify-content-center light-blue-bkg pb-5">
+        <div class="col-4 col-md-3">
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-4.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-1.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-2.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-3.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-18.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-5.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-6.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-7.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-9.jpg"
+          />
         </div>
-
-<!-- Section Intro Text -->
-        <div class="row justify-content-center mt-5 pb-5">
-          <div class="col-12 col-md-8 col-xl-6">
-            <h3 class="text-center">Feed Demo</h3>
-            <p>
-              The process of creating the feed involved many prototypes. My prototypes aided in user testing, conveying
-              ideas to my teammates, and showing desired interactions to our developers. The demo below was created
-              using the app Principle and portrayed infinite scrolling in a case where the user
-              had slow connection and would neeed to see a loading spinner.
-            </p>
-          </div>
+        <div class="col-4 col-md-3">
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-10.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-11.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-12.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-13.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-14.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-15.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-16.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-17.jpg"
+          />
         </div>
-
-<!-- Single Video -->
-        <div class="row">
-          <div class="offset-md-1 col-12 col-md-10 pb-5">
-            <video width="100%" height="auto" autoplay muted loop>
-              <source src="images/fidelity_feed/feeddemo.mp4" type="video/mp4">
-            </video>
-          </div>
+        <div class="col-4 col-md-3">
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-19.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-20.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-21.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-22.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-23.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-8.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-24.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-25.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-26.jpg"
+          />
+          <img
+            class="box-shadow mb-3"
+            draggable="false"
+            alt="feed-card"
+            src="images/fidelity_feed/feed-card-27.jpg"
+          />
         </div>
+      </div>
 
-<!-- End of Main -->
+      <!-- Section Intro Text -->
+      <div class="row justify-content-center mt-5 pb-5">
+        <div class="col-12 col-md-8 col-xl-6">
+          <h3 class="text-center">Feed Demo</h3>
+          <p>
+            The process of creating the feed involved many prototypes. My
+            prototypes aided in user testing, conveying ideas to my teammates,
+            and showing desired interactions to our developers. The demo below
+            was created using the app Principle and portrayed infinite scrolling
+            in a case where the user had slow connection and would neeed to see
+            a loading spinner.
+          </p>
+        </div>
+      </div>
+
+      <!-- Single Video -->
+      <div class="row">
+        <div class="offset-md-1 col-12 col-md-10 pb-5">
+          <video width="100%" height="auto" autoplay muted loop>
+            <source src="images/fidelity_feed/feeddemo.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <!-- End of Main -->
     </main>
 
-<!-- Info & Materials -->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-2 col-xl-4">
-              <h3>Project Information</h3>
+    <!-- Info & Materials -->
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-2 col-xl-4"
+        >
+          <h3>Project Information</h3>
+          <ul>
+            <li>Mobile App Redesign</li>
+            <li>Fidelity Feed</li>
+            <li>Fidelity Investments</li>
+            <li>2015-2017</li>
+          </ul>
+        </div>
+        <div class="col-md-5 col-lg-4 col-xl-4">
+          <h3>Materials & Methods</h3>
+          <div class="row no-gutters">
+            <div class="col-6 pr-3">
               <ul>
-                <li>Mobile App Redesign</li>
-                <li>Fidelity Feed</li>
-                <li>Fidelity Investments</li>
-                <li>2015-2017</li>
+                <li>Wireframing</li>
+                <li>Lab studies</li>
+                <li>Principle Prototype</li>
               </ul>
             </div>
-            <div class="col-md-5 col-lg-4 col-xl-4">
-              <h3>Materials & Methods</h3>
-              <div class="row no-gutters">
-                <div class="col-6 pr-3">
-                  <ul>
-                    <li>Wireframing</li>
-                    <li>Lab studies</li>
-                    <li>Principle Prototype</li>
-                  </ul>
-                </div>
-                <div class="col-6">
-                  <ul>
-                    <li>Adobe Illustrator</li>
-                    <li>After Effects</li>
-                    <li>Testing across devices</li>
-                  </ul>
-                </div>
-              </div>
+            <div class="col-6">
+              <ul>
+                <li>Adobe Illustrator</li>
+                <li>After Effects</li>
+                <li>Testing across devices</li>
+              </ul>
             </div>
           </div>
         </div>
-
-
-<!-- Next/Last Project -->
-      <div>
-        <a class="previous" href="healthcare.html">Last Project</a>
       </div>
-      <div>
-        <a class="next" href="oneup.html">Next Project</a>
-      </div>
+    </div>
 
-<!-- Footer -->
+    <!-- Next/Last Project -->
+    <div>
+      <a class="previous" href="healthcare.html">Last Project</a>
+    </div>
+    <div>
+      <a class="next" href="oneup.html">Next Project</a>
+    </div>
+
+    <!-- Footer -->
     <footer-component></footer-component>
 
-<!-- Script Tags -->
+    <!-- Script Tags -->
     <script src="index.js"></script>
   </body>
 </html>

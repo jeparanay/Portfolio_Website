@@ -183,17 +183,20 @@ class Header extends HTMLElement {
   }
 }
 
-customElements.define('header-component', Header);
+customElements.define("header-component", Header);
 
 var active = 0;
 for (var i = 0; i < document.links.length; i++) {
-    // Check if the link is not within an h6 element
-    if (!document.links[i].closest('h1') && document.links[i].href === document.URL) {
-        active = i;
-    }
+  // Check if the link is not within an h6 element
+  if (
+    !document.links[i].closest("h1") &&
+    document.links[i].href === document.URL
+  ) {
+    active = i;
+  }
 }
 
 // Apply the 'selected' class to the link if it's not within an h6 element
-if (!document.links[active].closest('h1')) {
-    document.links[active].className = 'selected';
+if (!document.links[active].closest("h1")) {
+  document.links[active].className = "selected";
 }
