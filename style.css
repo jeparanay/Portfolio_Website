@@ -594,6 +594,10 @@ MEDIA QUERIES
 		display:none;
 	}
 
+	video{
+		display: none;
+	}
+
 }
 
 
