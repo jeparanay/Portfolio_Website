@@ -84,11 +84,6 @@ class Header extends HTMLElement {
 
 
 
-
-
-
-
-
       @media (max-width: 992px) {
 
               .hamburger {
@@ -156,6 +151,8 @@ class Header extends HTMLElement {
                   display: block;
               }
       }
+
+     
 
 
 
