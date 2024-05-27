@@ -518,6 +518,19 @@ HomePage Project Photos On Hover
 PROJECT pages
 *****************/
 
+.outline {
+  border-top: .5px solid black; 
+}
+
+.outline2 {
+  border-top: .5px solid black; 
+  border-right: .5px solid black; 
+}
+
+.outline3 {
+  border: .5px solid black; 
+}
+
 .fullscreen-vid {
   width: 100%;
   height: auto;
