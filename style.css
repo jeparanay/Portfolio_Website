@@ -134,6 +134,7 @@ font-family: 'Abril Fatface', cursive;
 
 */
 
+
 /**********************
 BORDER BOX
 ***********************/
@@ -190,6 +191,7 @@ h4,
 h5,
 h6,
 p,
+li,
 a {
   font-family: "IBM Plex Sans", sans-serif;
 }
