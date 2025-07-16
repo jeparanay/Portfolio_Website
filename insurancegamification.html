@@ -1,66 +1,387 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Julia Paranay's Portfolio Website</title>
-  <meta name="viewport" content="width=device-width"> <!-- Corrects device width for Mobile -->
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="components/header.js" type="text/javascript" defer></script>
-  <script src="components/footer.js" type="text/javascript" defer></script>
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <title>Julia Paranay's Portfolio Website</title>
+    <meta name="viewport" content="width=device-width" />
+    <!-- Corrects device width for Mobile -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
+    <!-- Header Component -->
+    <header-component></header-component>
 
-<!-- Header Component -->
-  	<header-component></header-component>
-
-<!-- Scroll Section -->
+    <!-- Scroll Section -->
     <div id="scroll-section" class="scroll">
       <div id="scrolldown">
         <a href="#main"><span></span>Scroll</a>
       </div>
     </div>
 
-<!-- Background Image -->
-    <img class="fullscreen-img" alt="July Camp" src="images/h_insurance/insurance_cover4.jpg"/>
+    <!-- Background Image -->
+    <img
+      class="fullscreen-img"
+      alt="July Camp"
+      src="images/h_insurance/insurance_cover4.jpg"
+    />
 
-<!-- Main Content -->
+    <!-- Main Content -->
     <main id="main" class="pt-5 container-fluid">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center pt-5">
         <div class="col-12 col-md-8 col-xl-6 pb-5">
-          <h2 class="text-center pb-3"><span class="fa fa-lock"></span> Insurance Gamification</h2>
+          <h2 class="text-center pb-3">Insurance Gamification</h2>
           <p>
-            Our team of four designers were tasked with creating a new gamified experience to better engage
-            the client's customer service representatives and channel behavioral change into measurable growth.
-            We had three short weeks to deliver two separate multi-screen design concepts in the form of InVision prototypes.
-            <br>
-            <br>
-            If you'd like to learn more about my role in this project, my process, or want to work together - send me a message below!
+            Our team of four designers were tasked with creating a new gamified
+            experience to better engage the client's customer service
+            representatives (CSR's) and channel behavioral change into
+            measurable growth. We had three short weeks to deliver two separate
+            multi-screen design concepts in the form of InVision prototypes.
           </p>
         </div>
 
+        <!-- Single Image -->
+        <div class="row">
+          <div class="offset-md-1 col-12 col-md-10 pb-5 pt-5">
+            <h3 class="text-center mb-3">Project Overview</h3>
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/project_overview.jpg"
+            />
+          </div>
+        </div>
 
-<!-- End of Main Div -->
+        <!-- Single Image -->
+        <div class="row">
+          <div class="offset-md-1 col-12 col-md-10 pb-5">
+            <h3 class="text-center mb-3">Our Process</h3>
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/process.jpg"
+            />
+          </div>
+        </div>
+
+        <!-- Single Image -->
+        <div class="row">
+          <div class="offset-md-1 col-12 col-md-10 pb-5">
+            <h3 class="text-center mb-3">Design Toolkit</h3>
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/tools.jpg"
+            />
+          </div>
+        </div>
+
+        <!-- Single Image -->
+        <div class="row">
+          <div class="offset-md-1 col-12 col-md-10 pb-5">
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/sticky-grouping.jpg"
+            />
+          </div>
+        </div>
+
+        <!-- Section Intro Text -->
+        <div class="row justify-content-center pb-5 pt-5">
+          <div class="col-12 col-md-8 col-xl-6">
+            <h3 class="text-center mb-3">The Problem</h3>
+            <p>
+              Our client, a large insurance company, felt their CSR's were not
+              meeting expectations in the number of bindable insurance policies
+              being issued each month. The company wanted to increase the number
+              of policies and CSR's engagement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Single Image -->
+        <div class="row">
+          <div class="offset-md-1 col-12 col-md-10 pb-5">
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/workshops.png"
+            />
+          </div>
+        </div>
+
+        <!-- Section Intro Text -->
+        <div class="row justify-content-center pb-5 pt-5">
+          <div class="col-12 col-md-8 col-xl-6">
+            <h3 class="text-center mb-3">Design Thinking Workshop</h3>
+            <p>
+              Since the project had a tight timeline, we ramped up quickly by
+              leading the client through a full day Design Thinking Workshop.
+              How Might We's, Concept Posters, Crazy 8s, Solution Sketches and
+              Lightening Demos were a few of the exercises that helped our team
+              understand the project goals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Single Image -->
+        <div class="row">
+          <div class="offset-md-1 col-12 col-md-10 pb-5">
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/workshop.jpg"
+            />
+          </div>
+        </div>
+
+        <!-- Section Intro Text -->
+        <div class="row justify-content-center pb-5 pt-5">
+          <div class="col-12 col-md-8 col-xl-6">
+            <h3 class="text-center mb-3">User Research</h3>
+            <p>
+              During the design thinking workshop, we had the opportunity to
+              meet with a few users and ask questions to better understand their
+              needs. After the workshop, our internal team spent time organizing
+              our research together and pulling out the most important
+              information to focus on in our designs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Single Image -->
+        <div class="row">
+          <div class="offset-md-1 col-12 col-md-10 pb-5">
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/whiteboarding.jpg"
+            />
+          </div>
+        </div>
+
+        <!-- Side by side -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-5 col-xl-5 pb-5">
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/CSR.jpg"
+            />
+          </div>
+          <div class="col-12 col-md-10 col-lg-5 col-xl-5 pl-xl-5 pt-xl-5">
+            <h3 class="mb-3 text-none-center text-md-left">
+              The Users & Needs
+            </h3>
+            <ul>
+              <li>🔹 Customer Service Representatives</li>
+              <li>🔹 Manage large amounts of incoming calls</li>
+              <li>🔹 Generate sales leads</li>
+              <li>🔹 Identify and assess customers’ needs</li>
+              <li>🔹 Handle customer complaints</li>
+              <li>🔹 Keep records of customer interactions</li>
+              <li>🔹 Follow communication procedures</li>
+              <li>🔹 Build relationships and engage customers</li>
+              <li>🔹 Bind policies</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section Intro Text -->
+        <div class="row justify-content-center pb-5 pt-5">
+          <div class="col-12 col-md-8 col-xl-6">
+            <h3 class="text-center mb-3">Sketching</h3>
+            <p>
+              Our team split out the sections of the app to cover more ground. I
+              worked closely with my teammate Meli on the dashboard and
+              determined the layout, card content, and interactions. I started
+              with hand sketches and then brought them into Sketch to build out
+              wireframes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Single Image -->
+        <div class="row">
+          <div class="offset-md-1 col-12 col-md-10 pb-5">
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/wires.jpg"
+            />
+          </div>
+        </div>
+
+        <!-- Section Intro Text -->
+        <div class="row justify-content-center pb-5 pt-5">
+          <div class="col-12 col-md-8 col-xl-6">
+            <h3 class="text-center mb-3">Wireframes</h3>
+            <p>
+              Our team built out high-fidelity wireframes for all screens of the
+              app to ensure we were on the right path forward with our client.
+              We wanted them to be as close to the final structure of the app to
+              give the client a sense of the final approach. After our wireframe
+              check-in we made a few minor tweaks before starting in on visual
+              design.
+            </p>
+          </div>
+        </div>
+
+        <!-- Single Image -->
+        <div class="row">
+          <div class="offset-md-1 col-12 col-md-10 pb-5">
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/card_wires.jpg"
+            />
+          </div>
+        </div>
+
+        <!-- Section Intro Text -->
+        <div class="row justify-content-center pb-5 pt-5">
+          <div class="col-12 col-md-8 col-xl-6">
+            <h3 class="text-center mb-3">Final Deliverables</h3>
+            <h5>High Fidelity Dashboard</h5>
+            <p>
+              The final dashboard used their existing style guide and
+              incorporated points, rewards, and exciting learning methods to
+              compel the CSR's to issue more policies and allow them to grow in
+              their careers.
+            </p>
+            <br />
+            <br />
+            <h5>Two Versions of a Skills Tree</h5>
+            <p>
+              We delivered two versions of a skills tree, one which resembled
+              their brand using the stag antlers to represent the tree and
+              another which was simplified and less branded. Skill trees are
+              like roadmaps for personal development. Users explore various
+              skills, earning points along the way that unlock rewards. This
+              system encourages them to broaden their knowledge and take
+              meaningful actions.
+            </p>
+            <h5>Rewards Section</h5>
+            <p>
+              After assessing the findings from our design thinking workshop and
+              user research sessions, we settled on creating a dynamic dashboard
+              which would gamify the experience for the customer service reps.
+              We wanted to compel the CSR's to issue more policies by creating a
+              rewards system, fun ways to learn while earning points and working
+              towards their goals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Side by side -->
+        <div class="row">
+          <div class="col-12 col-md-6 pb-5">
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/dashboard.png"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/final_screens.jpg"
+            />
+          </div>
+        </div>
+
+        <!-- Side by side -->
+        <div class="row">
+          <div class="col-12 col-md-6 pb-5">
+            <img
+              draggable="false"
+              alt="feed"
+              src="images/h_insurance/rewards.png"
+            />
+          </div>
+          <div class="col-12 col-md-5 pl-xl-5 pt-xl-5">
+            <h3 class="mb-3">InVision Prototypes</h3>
+            <p>
+              Our InVision prototype included all our final deliverables for the
+              project, the app flow, dashboard, both skill trees, and the
+              rewards section. Within the prototype, we were able to show
+              dashboard interactions, build out examples of quizzes, advancement
+              in the skill trees, and show the reward redemption process.
+            </p>
+          </div>
+        </div>
+
+        <!-- Side by side -->
+        <div class="row justify-content-center pt-5">
+          <div class="col-12 col-md-5 col-lg-4 pb-5">
+            <h3 class="mb-3">Team Dynamic</h3>
+            <p>
+              Since we were on such a short timeline, we booked a large
+              conference room each day to work in close quarters. We
+              collaborated, white-boarded, and were constantly engaged with each
+              other to make sure we were all on the same page and using the same
+              symbols, styles, and content. 
+            </p>
+          </div>
+          <div class="col-12 col-md-5 col-lg-4">
+            <h3 class="mb-3">Deliverables</h3>
+            <ul>
+              <li>🔹 App Flow</li>
+              <li>🔹 3 InVision Prototypes</li>
+              <li>🔹 15 Wireframe Screens</li>
+              <li>🔹 30+ High Fidelity Screens</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- End of Main Div -->
       </div>
     </main>
 
-<!-- Info & Materials -->
+    <!-- Info & Materials -->
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-6 offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-2 col-xl-4">
+      <div class="row pt-5">
+        <div
+          class="offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-2 col-xl-4 pb-5"
+        >
           <h3>Project Information</h3>
           <ul>
             <li>Insurance Website</li>
-            <li>Accenture Digital Products</li>
+            <li>Design Consulting</li>
             <li>3 Week Project</li>
             <li>2019</li>
           </ul>
         </div>
-        <div class="col-6 col-md-5 col-lg-4 col-xl-4">
+        <div class="col-md-5 col-lg-4 col-xl-4">
           <h3>Materials & Methods</h3>
           <ul>
             <div class="row no-gutters">
@@ -86,32 +407,21 @@
       </div>
     </div>
 
-      <!-- Next/Last Project -->
-            <div>
-              <a class="previous" href="bose.html">Last Project</a>
-            </div>
-            <div>
-              <a class="next" href="liaison.html">Next Project</a>
-            </div>
+    <!-- Next/Last Project -->
+    <div>
+      <a class="previous" href="bose.html">Last Project</a>
+    </div>
+    <div>
+      <a class="next" href="liaison.html">Next Project</a>
+    </div>
 
-      <!-- Footer -->
-          <footer-component></footer-component>
-          <script src="index.js"></script>
-        </body>
-      </html>
+    <!-- Footer -->
+    <footer-component></footer-component>
+    <script src="index.js"></script>
+  </body>
+</html>
 
-
-
-
-
-
-
-
-
-
-
-
-      <!--
+<!--
           <main id="main" class="pt-5 container-fluid">
             <div class="row justify-content-center">
               <div class="col-12 col-md-8 col-xl-6 pb-5">

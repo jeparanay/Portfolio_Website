@@ -1,64 +1,234 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Julia Paranay's Portfolio Website</title>
-  <meta name="viewport" content="width=device-width"> <!-- Corrects device width for Mobile -->
-  <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="components/header.js" type="text/javascript" defer></script>
-  <script src="components/footer.js" type="text/javascript" defer></script>
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <title>Julia Paranay's Portfolio Website</title>
+    <meta name="viewport" content="width=device-width" />
+    <!-- Corrects device width for Mobile -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
+    <!-- Header Component -->
+    <header-component></header-component>
 
-<!-- Header Component -->
-  	<header-component></header-component>
-
-<!-- Scroll Section -->
+    <!-- Scroll Section -->
     <div id="scroll-section" class="scroll">
       <div id="scrolldown">
         <a href="#main"><span></span>Scroll</a>
       </div>
     </div>
 
-<!-- Background Image -->
-    <img class="fullscreen-img" alt="July Camp" src="images/healthcare/pia_dash.jpg"/>
+    <!-- Background Image -->
+    <img
+      class="fullscreen-img"
+      alt="July Camp"
+      src="images/healthcare/hc_cover.jpg"
+    />
 
-<!-- Main Content -->
+    <!-- Main Content -->
     <main id="main" class="pt-5 container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-xl-6 pb-5">
-          <h2 class="text-center pb-3"><span class="fa fa-lock"></span> Clinical Trial Applications</h2>
+          <h2 class="text-center pb-3">
+            Clinical Trial Application
+          </h2>
           <p>
-            Designed two connected apps to improve the process of running a new clinical trial and managing it's patients and data over time.
-            <br>
-            <br>
-            If you'd like to learn more about my role in this project, my process, or want to work together - send me a message below!
+            As clinical trials become increasingly complex, organizations face
+            new development challenges while striving to expand their pipelines
+            and improve success rates. With this in mind, I designed and
+            developed a clinical trial application for our client. This new app
+            accelerates trial insights by facilitating seamless data ingestion,
+            employing standards-driven intelligent data flow, and serving as a
+            leading cloud platform for data science. It provides real-time
+            visibility into the performance of clinical studies, enabling
+            users to quickly assess trial performance, whether managed
+            in-house or outsourced. Understanding the specific needs of
+            pharmaceutical and biotech organizations, we implemented features to
+            expedite and enhance clinical trials, including improved patient
+            identification, engagement, and insights, such as digital and
+            siteless trial capabilities.
           </p>
         </div>
-
-
-<!-- End of Main Div -->
       </div>
+
+      <!-- Section Intro Text -->
+      <div class="row justify-content-center mt-5 pb-5">
+        <div class="col-12 col-md-8 col-xl-6">
+          <h3 class="text-center">Inspiration</h3>
+          <p>
+            For each section of the new application, I began by researching
+            similar applications and drawing inspiration from them.
+          </p>
+        </div>
+      </div>
+
+      <!-- Single Image -->
+      <div class="row">
+        <div class="offset-md-1 col-12 col-md-10 pb-5">
+          <img
+            draggable="false"
+            alt="feed"
+            src="images/healthcare/reference images.jpg"
+          />
+        </div>
+      </div>
+
+      <!-- Section Intro Text -->
+      <div class="row justify-content-center mt-5 pb-5">
+        <div class="col-12 col-md-8 col-xl-6">
+          <h3 class="text-center">Flows & Wireframes</h3>
+          <p>
+            I developed flows and wireframes for the different sections of the
+            application, conducting feedback sessions with my team and the
+            client. This iterative process ensured alignment among all
+            stakeholders before proceeding to the final screen designs.
+          </p>
+        </div>
+      </div>
+
+      <!-- Single Image -->
+      <div class="row">
+        <div class="offset-md-1 col-12 col-md-10 pb-5">
+          <img
+            class="outline3"
+            draggable="false"
+            alt="feed"
+            src="images/healthcare/enrollment_flow.jpg"
+          />
+        </div>
+      </div>
+
+      <!-- Section Intro Text -->
+      <div class="row justify-content-center mt-5 pb-5">
+        <div class="col-12 col-md-8 col-xl-6">
+          <h3 class="text-center">Clinical Trial Homepage</h3>
+          <p>
+            The application's homepage provides users with an overview of all
+            ongoing studies. Users can easily grasp each study's enrollment
+            status, patient adherence, and view enrollment trends on a
+            month-to-month basis.
+          </p>
+        </div>
+      </div>
+
+      <!-- Single Image -->
+      <div class="row">
+        <div class="offset-md-1 col-12 col-md-10 pb-5">
+          <img
+            draggable="false"
+            alt="feed"
+            src="images/healthcare/clinical_home.jpg"
+          />
+        </div>
+      </div>
+
+      <!-- Section Intro Text -->
+      <div class="row justify-content-center mt-5 pb-5">
+        <div class="col-12 col-md-8 col-xl-6">
+          <h3 class="text-center">Clinical Trial Overview</h3>
+          <p>
+            Clicking on a specific clinical trial from the home screen directs
+            users to its dedicated page, providing comprehensive details about
+            the study. Here, users can access information on enrolled patients,
+            enroll new patients, manage device connectivity, and identify areas
+            where patients may require assistance with specific steps of the
+            process.
+          </p>
+        </div>
+      </div>
+
+      <!-- Single Video -->
+      <div class="row">
+        <div class="offset-md-1 col-12 col-md-10 pb-5">
+          <video
+            class="outline2"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source
+              src="images/healthcare/digital_pilot_a.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+
+      <!-- Section Intro Text -->
+      <div class="row justify-content-center mt-5 pb-5">
+        <div class="col-12 col-md-8 col-xl-6">
+          <h3 class="text-center">Patient Enrollment</h3>
+          <p>
+            During the patient enrollment process, each step is clearly
+            outlined, accompanied by detailed instructions to facilitate a
+            smooth enrollment experience. For trials involving connected
+            devices, users can easily access clear guidelines for connecting
+            these devices to ensure seamless data transmission.
+          </p>
+        </div>
+      </div>
+
+      <!-- Single Video -->
+      <div class="row">
+        <div class="offset-md-1 col-12 col-md-10 pb-5">
+          <video class="outline" width="100%" height="auto" autoplay muted loop>
+            <source
+              src="images/healthcare/enroll_patient.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+
+      <!-- End of Main Div -->
     </main>
 
-<!-- Info & Materials -->
+    <!-- Info & Materials -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-6 offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-2 col-xl-4">
+        <div
+          class="offset-md-1 col-md-5 offset-lg-2 col-lg-4 offset-xl-2 col-xl-4"
+        >
           <h3>Project Information</h3>
           <ul>
-            <li>Insurance Website</li>
-            <li>Accenture Digital Products</li>
+            <li>Healthcare</li>
+            <li>Clinical Trials</li>
+            <li>Design Consulting</li>
             <li>3 Month Project</li>
             <li>2020</li>
           </ul>
         </div>
-        <div class="col-6 col-md-5 col-lg-4 col-xl-4">
+        <div class="col-md-5 col-lg-4 col-xl-4">
           <h3>Materials & Methods</h3>
           <ul>
             <div class="row no-gutters">
@@ -69,7 +239,6 @@
                 <li>Research</li>
                 <li>Sketching</li>
                 <li>Product Flow</li>
-
               </div>
               <div class="col-6">
                 <li>User Personas</li>
@@ -85,16 +254,16 @@
       </div>
     </div>
 
-      <!-- Next/Last Project -->
-            <div>
-              <a class="previous" href="quote.html">Last Project</a>
-            </div>
-            <div>
-              <a class="next" href="fidelityfeed.html">Next Project</a>
-            </div>
+    <!-- Next/Last Project -->
+    <div>
+      <a class="previous" href="quote.html">Last Project</a>
+    </div>
+    <div>
+      <a class="next" href="fidelityfeed.html">Next Project</a>
+    </div>
 
-      <!-- Footer -->
-          <footer-component></footer-component>
-          <script src="index.js"></script>
-        </body>
-      </html>
+    <!-- Footer -->
+    <footer-component></footer-component>
+    <script src="index.js"></script>
+  </body>
+</html>

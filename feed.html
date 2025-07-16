@@ -2,217 +2,461 @@
 <html>
   <head>
     <title>Julia Paranay's Portfolio Website</title>
-    <meta name="viewport" content="width=device-width"> <!-- Corrects device width for Mobile -->
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width" />
+    <!-- Corrects device width for Mobile -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <!-- Header Component -->
+    <header-component></header-component>
 
-<!-- Header Component -->
-  	<header-component></header-component>
+    <!-- Hidden content
+      <p id="disappear" class="disappear">
+        Once loaded, hover over the images to see my drawing in action!
+      </p>
+    -->
 
-<!-- Scroll Section -->
-  	<div id="instagram-posts" class="container-fluid">
+    <!-- Scroll Section -->
+    <div id="instagram-posts" class="container-fluid">
       <div class="row insta-post-mt">
-
         <!-- Girl Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Girl Illustration" src="creativefeed/girl.jpg"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/girl.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Girl Illustration"
+            src="creativefeed/girl.jpg"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/girl.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Wedding Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Wedding Illustration" src="creativefeed/wedding.jpg"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/wedding.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Wedding Illustration"
+            src="creativefeed/wedding.jpg"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/wedding.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Deep Sea Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Deep Sea Illustration" src="creativefeed/deepsea.png"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/deepsea.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Deep Sea Illustration"
+            src="creativefeed/deepsea.png"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/deepsea.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Skate Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Skate Illustration" src="creativefeed/skate.png"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/skate.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Skate Illustration"
+            src="creativefeed/skate.png"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/skate.mp4" type="video/mp4" />
           </video>
         </div>
 
-
         <!-- Radio Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Radio Illustration" src="creativefeed/radio.png"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/radio.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Radio Illustration"
+            src="creativefeed/radio.png"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/radio.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Chipmunk Illustration-->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Chipmunk Illustration" src="creativefeed/chipmunk.jpg"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/chipmunk.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Chipmunk Illustration"
+            src="creativefeed/chipmunk.jpg"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/chipmunk.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Fish Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Fish Illustration" src="creativefeed/fish.png"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/fish.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Fish Illustration"
+            src="creativefeed/fish.png"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/fish.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Desert Illustration-->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Desert Illustration" src="creativefeed/desert.png"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/desert.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Desert Illustration"
+            src="creativefeed/desert.png"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/desert.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- No Sleep Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="No Sleep Illustration" src="creativefeed/nosleep.png"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/nosleep.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="No Sleep Illustration"
+            src="creativefeed/nosleep.png"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/nosleep.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Frail Flowers Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Frail Flowers Illustration" src="creativefeed/frail.jpg"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/frail.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Frail Flowers Illustration"
+            src="creativefeed/frail.jpg"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/frail.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Abstract Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Abstract Illustration" src="creativefeed/abstract.png"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/abstract.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Abstract Illustration"
+            src="creativefeed/abstract.png"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/abstract.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- DerpDog Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Derp-dog Illustration" src="creativefeed/derpdog.jpg"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/derpdog.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Derp-dog Illustration"
+            src="creativefeed/derpdog.jpg"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/derpdog.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Crystal Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Crystal Illustration" src="creativefeed/crystal.png"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/crystal.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Crystal Illustration"
+            src="creativefeed/crystal.png"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/crystal.mp4" type="video/mp4" />
           </video>
         </div>
 
-
         <!-- Tunnel Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Tunnel Illustration" src="creativefeed/tunnel.png"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/tunnel.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Tunnel Illustration"
+            src="creativefeed/tunnel.png"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/tunnel.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- Outpost Illustration -->
         <div class="col-12 col-md-6 col-lg-4 viewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Outpost Illustration" src="creativefeed/outpost.jpg"/>
-          <video class="box-shadow hidden imageJumpFix" width="100%" height="auto" autoplay muted loop>
-            <source src="creativefeed/outpost.mp4" type="video/mp4">
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Outpost Illustration"
+            src="creativefeed/outpost.jpg"
+          />
+          <video
+            class="box-shadow hidden imageJumpFix"
+            width="100%"
+            height="auto"
+            autoplay
+            muted
+            loop
+          >
+            <source src="creativefeed/outpost.mp4" type="video/mp4" />
           </video>
         </div>
 
         <!-- IMAGE VIEWER: Collage -->
         <div class="col-12 col-md-6 col-lg-4 imgviewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Collage / Illustration" src="creativefeed/collage.jpg"/>
-          <img class="thumb2 hidden box-shadow" draggable="false" alt="Collage Illustration" src="creativefeed/collagedrawing.jpg"/>
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Collage / Illustration"
+            src="creativefeed/collage.jpg"
+          />
+          <img
+            class="thumb2 hidden box-shadow"
+            draggable="false"
+            alt="Collage Illustration"
+            src="creativefeed/collagedrawing.jpg"
+          />
         </div>
 
         <!-- IMAGE VIEWER: Trees Painting -->
         <div class="col-12 col-md-6 col-lg-4 imgviewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Trees Painting" src="creativefeed/trees.jpg"/>
-          <img class="thumb2 hidden box-shadow" draggable="false" alt="Trees Reference Illustration" src="creativefeed/treesreference.jpg"/>
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Trees Painting"
+            src="creativefeed/trees.jpg"
+          />
+          <img
+            class="thumb2 hidden box-shadow"
+            draggable="false"
+            alt="Trees Reference Illustration"
+            src="creativefeed/treesreference.jpg"
+          />
         </div>
 
         <!-- IMAGE VIEWER: Vibrant Sea Painting -->
         <div class="col-12 col-md-6 col-lg-4 imgviewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="vibrant sea Painting" src="creativefeed/vibrantsea.jpg"/>
-          <img class="thumb2 hidden box-shadow" draggable="false" alt="vibrant sea Illustration" src="creativefeed/vibrantsea2.jpg"/>
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="vibrant sea Painting"
+            src="creativefeed/vibrantsea.jpg"
+          />
+          <img
+            class="thumb2 hidden box-shadow"
+            draggable="false"
+            alt="vibrant sea Illustration"
+            src="creativefeed/vibrantsea2.jpg"
+          />
         </div>
 
         <!-- IMAGE VIEWER: Haystack Painting -->
         <div class="col-12 col-md-6 col-lg-4 imgviewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Haystack Painting" src="creativefeed/haystack.jpg"/>
-          <img class="thumb2 hidden box-shadow" draggable="false" alt="Haystack Painting" src="creativefeed/haystack2.png"/>
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Haystack Painting"
+            src="creativefeed/haystack.jpg"
+          />
+          <img
+            class="thumb2 hidden box-shadow"
+            draggable="false"
+            alt="Haystack Painting"
+            src="creativefeed/haystack2.png"
+          />
         </div>
 
         <!-- IMAGE VIEWER: Tomatoes Painting -->
         <div class="col-12 col-md-6 col-lg-4 imgviewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Tomatoes Painting" src="creativefeed/tomatoes.jpg"/>
-          <img class="thumb2 hidden box-shadow" draggable="false" alt="Tomatoes Painting" src="creativefeed/tomatoes2.jpg"/>
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Tomatoes Painting"
+            src="creativefeed/tomatoes.jpg"
+          />
+          <img
+            class="thumb2 hidden box-shadow"
+            draggable="false"
+            alt="Tomatoes Painting"
+            src="creativefeed/tomatoes2.jpg"
+          />
         </div>
 
         <!-- IMAGE VIEWER: Birch Watercolor Painting -->
         <div class="col-12 col-md-6 col-lg-4 imgviewer feedImgPadding">
-          <img class="thumb box-shadow" draggable="false" alt="Birch Tree Watercolor Painting" src="creativefeed/birch.jpg"/>
-          <img class="thumb2 hidden box-shadow" draggable="false" alt="Birch Tree Watercolor Painting" src="creativefeed/birch2.jpg"/>
+          <img
+            class="thumb box-shadow"
+            draggable="false"
+            alt="Birch Tree Watercolor Painting"
+            src="creativefeed/birch.jpg"
+          />
+          <img
+            class="thumb2 hidden box-shadow"
+            draggable="false"
+            alt="Birch Tree Watercolor Painting"
+            src="creativefeed/birch2.jpg"
+          />
         </div>
-
       </div>
     </div>
 
+    <!-- Adding space above the footer b/c it was riding up below the cards -->
+    <div class="row pb-5 pt-5 mb-5 mt-5"></div>
 
-<!-- Adding space above the footer b/c it was riding up below the cards -->
-      <div class="row pb-5 pt-5 mb-5 mt-5">
-      </div>
+    <!-- Footer -->
+    <footer-component></footer-component>
 
-<!-- Footer -->
-      <footer-component></footer-component>
-
-<!-- Script Tags -->
-      <script src="index.js"></script>
-    </body>
-  </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Script Tags -->
+    <script src="index.js"></script>
+    <script src="creativefeed.js"></script>
+  </body>
+</html>
 
 <!-- Hidden content
 

@@ -54,7 +54,7 @@ class Footer extends HTMLElement {
               <p> <strong>By Day: </strong> Principal User Experience Designer at Product Insight.
               <br><strong>By Night: </strong> Learning 3D Modeling & Crochet.</p>
               <!-- Left Col Text -->
-              <p>I'm currently available for freelance design and illustration commissions. Message me for more information.</p>
+              <p>I'm currently available for freelance design & art commissions. Message me for more information.</p>
               <a href="mailto:jeparanay@comcast.net?Subject=Hello!" class="btn btn-dark" role="button" aria-pressed="true" target="_top"><span class="fa fa-envelope"></span>Say Hello!</a>
             </div>
             <div class="offset-lg-3 offset-md-1 col-lg-2 col-md-3 mb-md-0 mt-xs-3">
