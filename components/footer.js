@@ -51,8 +51,8 @@ class Footer extends HTMLElement {
               <!--
               <h6 class="text-uppercase">Thanks for Viewing</h6>
               -->
-              <p> <strong>By Day: </strong> Principal Product Designer at Motional.
-              <br><strong>By Night: </strong> Illustrating, crafting, & learning 3D.</p>
+              <p> <strong>By Day: </strong> Principal User Experience Designer at Product Insight.
+              <br><strong>By Night: </strong> Learning 3D Modeling & Crochet.</p>
               <!-- Left Col Text -->
               <p>I'm currently available for freelance design and illustration commissions. Message me for more information.</p>
               <a href="mailto:jeparanay@comcast.net?Subject=Hello!" class="btn btn-dark" role="button" aria-pressed="true" target="_top"><span class="fa fa-envelope"></span>Say Hello!</a>
@@ -80,7 +80,7 @@ class Footer extends HTMLElement {
                   <a href="https://www.instagram.com/julabean.creative/"><span class="fa fa-instagram"></span>Creative</a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/jeparanay/"><span class="fa fa-instagram"></span>Personal</a>
+                  <a href="https://www.instagram.com/julabean.nelson/"><span class="fa fa-instagram"></span>Personal</a>
                 </li>
                 <li>
                   <a href="https://www.behance.net/JuliaParanay"><span class="fa fa-behance"></span>Behance</a>
