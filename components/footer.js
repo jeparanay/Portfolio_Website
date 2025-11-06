@@ -52,7 +52,7 @@ class Footer extends HTMLElement {
               <h6 class="text-uppercase">Thanks for Viewing</h6>
               -->
               <p> <strong>By Day: </strong> Principal User Experience Designer at Product Insight.
-              <br><strong>By Night: </strong> Learning 3D Modeling & Crochet.</p>
+              <br><strong>By Night: </strong> Learning 3D Modeling, AI Tools & Crochet.</p>
               <!-- Left Col Text -->
               <p>I'm currently available for freelance design & art commissions. Message me for more information.</p>
               <a href="mailto:jeparanay@comcast.net?Subject=Hello!" class="btn btn-dark" role="button" aria-pressed="true" target="_top"><span class="fa fa-envelope"></span>Say Hello!</a>
@@ -89,7 +89,7 @@ class Footer extends HTMLElement {
             </div>
           </div>
         </div>
-        <div class="footer-copyright text-center mb-3"> &copy; 2023 Copyright: Website designed and developed by Julia Paranay</div>
+        <div class="footer-copyright text-center mb-3"> &copy; 2025 Copyright: Website designed and developed by Julia Nelson (Paranay)</div>
       </footer>
       <!-- Footer -->
     `;

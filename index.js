@@ -48,4 +48,63 @@ $(document).ready(function () {
       .toggleClass("show")
       .animate({ opacity: 1 }, "fast");
   });
+
+  // Scroll-triggered animations for project cards
+  function initScrollAnimations() {
+    const allCards = document.querySelectorAll(".fade-in");
+    
+    // Automatically fade in the first row of images on page load
+    // Wait for hero text animations to complete (last one finishes around 1.4s)
+    function fadeInFirstRow() {
+      // Get the first row - typically the first 2 projects (col-lg-6 each)
+      const firstRowCards = Array.from(allCards).slice(0, 2);
+      
+      // Hero text animations: line (0.2s), name (0.4s), role (0.6s), description (0.8s + 0.6s = 1.4s)
+      // Start images after hero animations complete, around 1.5s
+      const baseDelay = 1500;
+      
+      firstRowCards.forEach(function(card, index) {
+        setTimeout(function() {
+          card.classList.add("visible");
+        }, baseDelay + (index * 150)); // Stagger: 1.5s, 1.65s
+      });
+    }
+
+    // Check if IntersectionObserver is supported
+    if ("IntersectionObserver" in window) {
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px 0px -100px 0px",
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            // Check if this card is already visible (from first row)
+            if (!entry.target.classList.contains("visible")) {
+              entry.target.classList.add("visible");
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Observe all project cards with fade-in class
+      allCards.forEach(function (card) {
+        observer.observe(card);
+      });
+
+      // Fade in first row immediately on page load
+      fadeInFirstRow();
+    } else {
+      // Fallback for browsers without IntersectionObserver
+      $(".fade-in").each(function () {
+        $(this).addClass("visible");
+      });
+    }
+  }
+
+  // Initialize scroll animations
+  initScrollAnimations();
 });
