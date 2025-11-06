@@ -170,7 +170,7 @@ class Header extends HTMLElement {
             <li> <a href="images/resume/Julia_Nelson_Resume_2025.pdf" target="_blank">Resume</a></li>
   				</ul>
   			</nav>
-        </div>
+        </div> 
         <div class="hamburger">
   				<div class="line"></div>
   				<div class="line"></div>
