@@ -107,4 +107,54 @@ $(document).ready(function () {
 
   // Initialize scroll animations
   initScrollAnimations();
+
+  // Typewriter effect for hero role text
+  function initTypewriter() {
+    const words = ['Product', 'User Experience'];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typewriterElement = document.getElementById('typewriter-text');
+    
+    if (!typewriterElement) return;
+
+    function type() {
+      const currentWord = words[wordIndex];
+      
+      if (isDeleting) {
+        // Remove character
+        typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+        
+        if (charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          setTimeout(type, 500); // Pause before typing next word
+          return;
+        }
+      } else {
+        // Add character
+        typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+        
+        if (charIndex === currentWord.length) {
+          isDeleting = true;
+          setTimeout(type, 2000); // Pause at complete word
+          return;
+        }
+      }
+      
+      // Typing speed
+      const typingSpeed = isDeleting ? 100 : 150;
+      setTimeout(type, typingSpeed);
+    }
+    
+    // Start typing after hero animations complete (around 1.5s)
+    setTimeout(function() {
+      type();
+    }, 1500);
+  }
+
+  // Initialize typewriter effect
+  initTypewriter();
 });

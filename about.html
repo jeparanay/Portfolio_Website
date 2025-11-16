@@ -38,122 +38,363 @@
   <body>
     <header-component></header-component>
 
-    <main class="container-fluid pt-5">
-      <div class="row pt-5">
-        <div class="col-12 col-md-6 col-xl-6">
-          <img
-            class="about-img"
-            src="images/about/julia_2024.png"
-            alt="Julia Nelson"
-          />
+    <main class="about-page-wrapper">
+      <!-- Hero Section with Large Profile Image -->
+      <section class="about-hero-section" data-bg-color="#ffffff">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9">
+              <div class="about-hero-content-new">
+                <div class="about-profile-wrapper">
+                  <div class="about-profile-circle">
+                    <img
+                      class="about-profile-img"
+                      src="images/about/julianelson.jpeg"
+                      alt="Photo of Julia Nelson"
+                    />
+                  </div>
+                </div>
+                <div class="about-hero-text">
+                  <h1 class="about-hero-title">Hey there, I'm Julia</h1>
+                  <p class="about-hero-subtitle">
+                    Product Designer with 10+ years of experience crafting end-to-end experiences 
+                    across digital interfaces and real-world interactions.
+                  </p>
+                  <div class="about-location-new">
+                    <i class="fa fa-map-marker"></i> 
+                    <span>Boston / Greater Boston</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-md-6 col-xl-5 pt-5 pt-md-0">
-          <h3>Hey there, I'm Julia &mdash;</h3>
-          <!-- <h4 class="job-text">Visual/UX Designer & Front-End Developer</h4> -->
-          <section>
-            <p class="about-padding">
-              I've spent the last ten years immersed in the dynamic world of
-              design in Boston, MA. In my current role at Product Insight,
-              I'm leading design of end-to-end experiences that
-              span both digital interfaces and real-world interactions. I take a systems-level
-              approach to design, shaping every touchpoint in the user journey and
-              partnering closely with engineering to ensure implementation aligns with 
-              user needs and practical constraints.
-              <br />
-              <br />
-              In my previous role as a Principal Product Designer at Motional, I focused on shaping the
-              future of autonomous vehicles. Working collaboratively with
-              Product, Research, Engineering and other partners, I led
-              planning, strategy and vision on key priorities from concept to
-              completion. Working in the fast-paced realm of cutting-edge
-              technology within the AI-driven vehicle sector, every day
-              brought fresh challenges and exciting innovations. On my teams, I
-              applied meticulous organization, process improvements, and
-              comprehensive documentation to ensure efficiency and
-              accessibility. My dedication to keeping projects well-organized
-              and thoroughly documented was instrumental in ensuring smooth
-              workflows and successful outcomes.
-              <br />
-              <br />
-              At Motional, I oversaw one direct report, building upon my
-              previous experiences at Accenture Digital Products where I
-              mentored junior designers going through the apprentice program. At
-              Accenture, I worked as a design consultant leading teams in
-              crafting clean, meaningful, and accessible products for diverse
-              clients across industries such as Finance, Insurance, Consumer
-              Electronics, Consumer Goods, Education, E-Commerce, Small
-              Businesses, Public Sector, Healthcare, and Aerospace Engineering.
-              <br />
-              <br />
-              Beyond my professional endeavors, I am deeply engaged in the
-              design community, taking on roles that allow me to connect with
-              fellow designers and mentor emerging talents. This has included
-              co-hosting
-              <a
-                class="certificate"
-                href="https://www.instagram.com/practicemakes.design/?igsh=azJkNjA1eTZoajBw"
-                >Practice Makes</a
-              >, a bi-monthly design meetup in Boston. At Motional, I have been
-              an active member of the social committee, contributing to the
-              establishment of a vibrant community post-COVID through organizing
-              company events and hosting monthly board game nights. I also host
-              a monthly art meetup where colleagues gather to learn new forms of
-              creativity, crafts, and explore various design outlets.
-              <br />
-              <br />
-              Away from my desk, I'm constantly seeking new avenues for learning
-              and growth. Recently, I completed a
-              <a
-                class="certificate"
-                href="images/certificates/eCornell_certificate_JP.png"
-                >leadership essentials certificate</a
-              >
-              with Cornell University and am now delving into 3D modeling with
-              Blender, which has been crucial in my current role. Through
-              Motional, I took part in
-              <a class="certificate" href="https://www.coachalilevin.com/"
-                >Ali Levin's CLEAR program</a
-              >
-              which built on my leadership and coaching skills. In October 2022,
-              I completed a week-long, in-person management training course upon
-              assuming my managerial role at Motional.
-              <br />
-              <br />
-              Front-end development is another passion of mine. I've taken
-              classes through One Month and General Assembly, learning HTML,
-              CSS, and Javascript. Coding has been a consistent source of
-              excitement for me over the years. I crafted this portfolio website
-              using Github, Bootstrap, and VS Code, and am constantly seeking out
-              new ways to refine and improve it.
-              <br />
-              <br />
-              Outside of work, you'll often find me on wheels – whether
-              it's biking, skating, or riding my motorcycle. I also enjoy
-              learning new crafts, playing board and video games, watching
-              thrillers, listening to audio books, painting, gardening,
-              photography, weightlifting and cooking new plant-based recipes.
-              <br />
-              <br />
-              If you're interested in collaborating or simply want to connect,
-              don't hesitate to reach out!
-            </p>
+      </section>
+
+      <!-- Quick Highlights with Color Accents -->
+      <section class="about-highlights-section" data-bg-color="#f8f9fa">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9">
+              <div class="about-highlights-grid">
+                <div class="highlight-card-new highlight-card-1">
+                  <h4>Current Role</h4>
+                  <p class="highlight-title">Principal User Experience Designer</p>
+                  <p class="highlight-detail">Product Insight - Last-mile delivery experience design</p>
+                </div>
+                <div class="highlight-card-new highlight-card-2">
+                  <h4>Previous Role</h4>
+                  <p class="highlight-title">Principal Product Designer</p>
+                  <p class="highlight-detail">Motional - Autonomous vehicle experience design</p>
+                </div>
+                <div class="highlight-card-new highlight-card-3">
+                  <h4>Focus</h4>
+                  <p class="highlight-title">Systems-Level Design</p>
+                  <p class="highlight-detail">Integrating robotics, automation, and UX at scale</p>
+                </div>
+                <div class="highlight-card-new highlight-card-4">
+                  <h4>Experience</h4>
+                  <p class="highlight-title">10+ Years</p>
+                  <p class="highlight-detail">Design, strategy, organization, and leadership</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Career Timeline -->
+      <section class="about-timeline-section" data-bg-color="#ffffff">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="offset-md-1 col-12 col-md-10">
+              <img
+                class="timeline-img-new"
+                src="images/about/JN_Job_Timeline.png"
+                alt="Julia Nelson Career Timeline"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Current Work -->
+      <section class="about-work-section" data-bg-color="#f0f4ff">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9">
+              <div class="section-header-new">
+                <h2 class="section-title-new">Current Work</h2>
+                <div class="section-title-line"></div>
+              </div>
+              <div class="work-card-new work-card-primary">
+                <div class="work-card-accent"></div>
+                <div class="work-card-content">
+                  <div class="work-card-header-new">
+                    <h3>Principal User Experience Designer</h3>
+                    <span class="work-company-new">Product Insight</span>
+                  </div>
+                  <p class="work-description-new">
+                    Leading design of end-to-end experiences that span both digital interfaces and 
+                    real-world interactions. I take a systems-level approach to design, shaping every 
+                    touchpoint in the user journey and partnering closely with engineering to ensure 
+                    implementation aligns with user needs and practical constraints.
+                  </p>
+                  <div class="work-focus-new">
+                    <strong>Focus:</strong> Last-mile delivery experience design
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Previous Experience -->
+      <section class="about-experience-section" data-bg-color="#fff5f0">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9">
+              <div class="section-header-new">
+                <h2 class="section-title-new">Previous Experience</h2>
+                <div class="section-title-line"></div>
+              </div>
+              
+              <div class="work-card-new work-card-secondary">
+                <div class="work-card-accent work-card-accent-purple"></div>
+                <div class="work-card-content">
+                  <div class="work-card-header-new">
+                    <h3>Principal Product Designer</h3>
+                    <span class="work-company-new work-company-purple">Motional</span>
+                  </div>
+                  <p class="work-description-new">
+                    Focused on shaping the future of autonomous vehicles. Working collaboratively with 
+                    Product, Research, Engineering and other partners, I led planning, strategy and vision 
+                    on key priorities from concept to completion. Oversaw one direct report and applied 
+                    meticulous organization, process improvements, and comprehensive documentation to ensure 
+                    efficiency and accessibility. Working in the fast-paced realm of cutting-edge technology 
+                    within the AI-driven vehicle sector, I kept projects well-organized and thoroughly 
+                    documented to ensure smooth workflows and successful outcomes.
+                  </p>
+                  <div class="work-focus-new">
+                    <strong>Focus:</strong> Autonomous vehicle experience design
+                  </div>
+                </div>
+              </div>
+
+              <div class="work-card-new work-card-secondary">
+                <div class="work-card-accent work-card-accent-orange"></div>
+                <div class="work-card-content">
+                  <div class="work-card-header-new">
+                    <h3>Design Consultant</h3>
+                    <span class="work-company-new work-company-orange">Accenture Digital Products</span>
+                  </div>
+                  <p class="work-description-new">
+                    Led teams in crafting clean, meaningful, and accessible products for diverse clients 
+                    across industries such as Finance, Insurance, Consumer Electronics, Consumer Goods, 
+                    Education, E-Commerce, Small Businesses, Public Sector, Healthcare, and Aerospace Engineering. 
+                    Mentored junior designers through the apprentice program, building the foundation for my 
+                    leadership approach.
+                  </p>
+                  <div class="work-focus-new">
+                    <strong>Focus:</strong> Consulting for various clients
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community & Leadership Image -->
+      <section class="about-community-image-section" data-bg-color="#ffffff">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="offset-md-1 col-12 col-md-10">
+              <img
+                class="timeline-img-new"
+                src="images/about/community.png"
+                alt="Community & Leadership"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community & Leadership -->
+      <section class="about-community-section" data-bg-color="#f0fff4">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9">
+              <div class="section-header-new">
+                <h2 class="section-title-new">Community & Leadership</h2>
+                <div class="section-title-line"></div>
+              </div>
+              <div class="community-cards-grid">
+                <div class="community-card">
+                  <div class="community-card-icon">🎨</div>
+                  <h4>Design Community</h4>
+                  <p>
+                    At Accenture, I was a co-host of <a href="https://www.instagram.com/practicemakes.design/?igsh=azJkNjA1eTZoajBw" target="_blank">Practice Makes</a>, 
+                    a bi-monthly design meetup connecting designers, <a href="https://www.instagram.com/practicemakes.design/p/CJG-1EnMRjF/" target="_blank">artists</a> and fostering community.
+                  </p>
+                </div>
+                <div class="community-card">
+                  <div class="community-card-icon">🎲</div>
+                  <h4>Company Culture</h4>
+                  <p>
+                    At Motional, I was part of the <strong>social committee</strong>, organizing and planning new company events. I also started hosting 
+                    monthly <strong>board game nights</strong> at my past two companies and regularly host <strong>craft nights</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meetups Image -->
+      <section class="about-meetups-image-section" data-bg-color="#ffffff">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="offset-md-1 col-12 col-md-10">
+              <img
+                class="timeline-img-new"
+                src="images/about/meetups.png"
+                alt="Meetups"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Learning -->
+      <section class="about-learning-section" data-bg-color="#fffaf0">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9">
+              <div class="section-header-new">
+                <h2 class="section-title-new">Continuous Learning</h2>
+                <div class="section-title-line"></div>
+              </div>
+              <div class="learning-card">
+                <ul class="learning-list-new">
+                  <li>
+                    <span class="learning-bullet">🤖</span>
+                    <div class="learning-content">
+                      <strong>AI Tools for Design & Development</strong> — Experimenting with Cursor, Lovable, V0, 
+                      Claude, ChatGPT, and other AI tools for UX research, design ideation, and development workflows
+                    </div>
+                  </li>
+                  <li>
+                    <span class="learning-bullet">🎓</span>
+                    <div class="learning-content">
+                      <strong><a href="images/certificates/eCornell_certificate_JP.png" target="_blank">Leadership Essentials Certificate</a></strong> — Enrolled in a 4 month online course through Cornell University (eCornell) while working at Motional to become a stronger leader and mentor (2023). 
+                    </div>
+                  </li>
+                  <li>
+                    <span class="learning-bullet">💡</span>
+                    <div class="learning-content">
+                      <strong><a href="https://coachalilevin.com/course/" target="_blank">CLEAR Program</a></strong> — Selected to participate in Ali Levin's leadership and coaching program at Motional (2023).
+                    </div>
+                  </li>
+                  <li>
+                    <span class="learning-bullet">👥</span>
+                    <div class="learning-content">
+                      <strong>Management Training</strong> — Participated in a week-long in-person course at Motional (October 2022)
+                    </div>
+                  </li>
+                  <li>
+                    <span class="learning-bullet">👩‍💻</span>
+                    <div class="learning-content">
+                      <strong>New Programs</strong> — Recently learned ProtoPie for complex multi-device prototyping, continuing to learn Blender for 3D modeling.
+                    </div>
+                  </li>
+                  <li>
+                    <span class="learning-bullet">💻</span>
+                    <div class="learning-content">
+                      <strong>Front-End Development</strong> — HTML, CSS, JavaScript through <a href="https://www.credential.net/85707767-a135-460a-8f97-e889e27efdfd#acc.HGBhzd1v" target="_blank" rel="noopener noreferrer">One Month</a> and <a href="https://generalassemb.ly/students/courses/front-end-web-development-short-course" target="_blank" rel="noopener noreferrer">General Assembly</a> and have continued enhancing my skills with new frameworks and tools.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personal Interests -->
+      <section class="about-interests-section" data-bg-color="#f5f0ff">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9">
+              <div class="section-header-new">
+                <h2 class="section-title-new">Outside of Work</h2>
+                <div class="section-title-line"></div>
+              </div>
+              <div class="interests-content">
+                <p class="hobby-intro">
+                  I'm always up for a new adventure or learning something new. Here are a few of my favorite things to do:
+                </p>
+                <ul class="v2-list hobby-list">
+                  <li><span class="hobby-emoji">🚴</span><span class="hobby-text">Biking</span></li>
+                  <li><span class="hobby-emoji">🛼</span><span class="hobby-text">Skating</span></li>
+                  <li><span class="hobby-emoji">🏍️</span><span class="hobby-text">Riding my motorcycle</span></li>
+                  <li><span class="hobby-emoji">🛴</span><span class="hobby-text">Scooting</span></li>
+                  <li><span class="hobby-emoji">🎶</span><span class="hobby-text">Going to Concerts</span></li>
+                  <li><span class="hobby-emoji">🧶</span><span class="hobby-text">Learning new crafts</span></li>
+                  <li><span class="hobby-emoji">🎲</span><span class="hobby-text">Board games</span></li>
+                  <li><span class="hobby-emoji">🎮</span><span class="hobby-text">Video games</span></li>
+                  <li><span class="hobby-emoji">🎬</span><span class="hobby-text">Watching thrillers</span></li>
+                  <li><span class="hobby-emoji">🎧</span><span class="hobby-text">Audiobooks</span></li>
+                  <li><span class="hobby-emoji">🎨</span><span class="hobby-text">Painting</span></li>
+                  <li><span class="hobby-emoji">🌱</span><span class="hobby-text">Gardening</span></li>
+                  <li><span class="hobby-emoji">🥗</span><span class="hobby-text">Plant-based cooking</span></li>
+                  <li><span class="hobby-emoji">🏋️</span><span class="hobby-text">Weightlifting</span></li>
+                  <li><span class="hobby-emoji">📷</span><span class="hobby-text">Photography</span></li>
+                  
+                  
+                  <li><span class="hobby-emoji">🗺️</span><span class="hobby-text">Planning trips</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
           </section>
+
+      <!-- Outside of Work Image -->
+      <section class="about-interests-image-section" data-bg-color="#ffffff">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="offset-md-1 col-12 col-md-10">
+              <img
+                class="timeline-img-new"
+                src="images/about/outside_of_work.png"
+                alt="Outside of Work - Hobbies and Interests"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="about-contact-section" data-bg-color="#f8f9fa">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-9">
+              <div class="contact-card">
+                <h2 class="contact-title">Let's Connect</h2>
+                <p class="contact-text">
+                  If you're interested in collaborating or simply want to connect, don't hesitate to reach out!
+                </p>
+              </div>
+            </div>
         </div>
       </div>
+      </section>
     </main>
 
     <footer-component></footer-component>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

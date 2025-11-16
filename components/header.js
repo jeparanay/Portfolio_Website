@@ -86,6 +86,11 @@ class Header extends HTMLElement {
 
       @media (max-width: 992px) {
 
+              header h1 {
+                padding-left: 15px;
+                padding-right: 10px;
+              }
+
               .hamburger {
                   width: 50px;
                   height: 28px;
