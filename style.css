@@ -1906,6 +1906,77 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
   z-index: 1;
 }
 
+/* Mobile images - hidden on desktop */
+.timeline-img-mobile {
+  display: none;
+}
+
+/* Mobile Logo Carousel - hidden on desktop */
+.logo-carousel-mobile {
+  display: none;
+}
+
+/* Desktop timeline image - hidden on mobile */
+@media (max-width: 768px) {
+  .timeline-img-desktop {
+    display: none;
+  }
+  
+  .timeline-img-mobile {
+    display: block;
+  }
+  
+  /* Remove padding from timeline section div on mobile for carousel */
+  .about-timeline-section > div {
+    padding: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  /* Show logo carousel on mobile */
+  .logo-carousel-mobile {
+    display: block;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+    position: relative;
+    padding: 40px 0;
+  }
+  
+  .logo-carousel-track {
+    display: flex;
+    animation: logo-carousel-scroll 25s linear infinite;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+    will-change: transform;
+    min-height: 120px;
+  }
+  
+  .logo-carousel-item {
+    flex-shrink: 0;
+    width: 180px;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+    display: block;
+    vertical-align: middle;
+    margin: 0;
+  }
+}
+
+@keyframes logo-carousel-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move exactly the width of 5 logos + 4 gaps */
+    /* Calculation: (180px × 5) + (40px × 4) = 900px + 160px = 1060px */
+    transform: translateX(-1060px);
+  }
+}
+
 /* Work Sections - Editorial Style */
 .about-work-section,
 .about-experience-section {
