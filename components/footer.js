@@ -39,6 +39,11 @@ class Footer extends HTMLElement {
       	background-image: none;
       	border-color: #343a40;
       }
+      footer .btn-dark:hover {
+      	background-color: #568056;
+      	border-color: #568056;
+      	transition: all 0.3s ease;
+      }
 
 
       </style>
@@ -61,13 +66,13 @@ class Footer extends HTMLElement {
               <h5>Find Me On</h5>
               <ul class="list-unstyled">
                 <li>
-                  <a href="https://www.linkedin.com/in/juliaparanay/!"><span class="fa fa-linkedin"></span>LinkedIn</a>
+                  <a href="https://www.linkedin.com/in/juliaparanay/!" target="_blank" rel="noopener noreferrer"><span class="fa fa-linkedin"></span>LinkedIn</a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/jeparanay"><span class="fa fa-facebook-f"></span>Facebook</a>
+                  <a href="https://www.facebook.com/jeparanay" target="_blank" rel="noopener noreferrer"><span class="fa fa-facebook-f"></span>Facebook</a>
                 </li>
                 <li>
-                  <a href="https://dribbble.com/jeparanay"><span class="fa fa-dribbble"></span>Dribbble</a>
+                  <a href="https://dribbble.com/jeparanay" target="_blank" rel="noopener noreferrer"><span class="fa fa-dribbble"></span>Dribbble</a>
                 </li>
               </ul>
             </div>
@@ -77,13 +82,13 @@ class Footer extends HTMLElement {
 
               <ul class="list-unstyled">
                 <li>
-                  <a href="https://www.instagram.com/julabean.creative/"><span class="fa fa-instagram"></span>Creative</a>
+                  <a href="https://www.instagram.com/julabean.creative/" target="_blank" rel="noopener noreferrer"><span class="fa fa-instagram"></span>Creative</a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/julabean.nelson/"><span class="fa fa-instagram"></span>Personal</a>
+                  <a href="https://www.instagram.com/julabean.nelson/" target="_blank" rel="noopener noreferrer"><span class="fa fa-instagram"></span>Personal</a>
                 </li>
                 <li>
-                  <a href="https://www.behance.net/JuliaParanay"><span class="fa fa-behance"></span>Behance</a>
+                  <a href="https://www.behance.net/JuliaParanay" target="_blank" rel="noopener noreferrer"><span class="fa fa-behance"></span>Behance</a>
                 </li>
               </ul>
             </div>

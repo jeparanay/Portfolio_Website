@@ -158,3 +158,12 @@ $(document).ready(function () {
   // Initialize typewriter effect
   initTypewriter();
 });
+
+// Toggle work description expand/collapse
+function toggleWorkDescription(id) {
+  const expandable = document.getElementById(id + '-expandable');
+  
+  if (expandable) {
+    expandable.classList.toggle('expanded');
+  }
+}
