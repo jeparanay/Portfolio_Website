@@ -1946,19 +1946,19 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
   .logo-carousel-track {
     display: flex;
     animation: logo-carousel-scroll 25s linear infinite;
-    gap: 40px;
+    gap: 12px;
     align-items: center;
     justify-content: flex-start;
     padding-left: 0;
     will-change: transform;
-    min-height: 120px;
+    min-height: 90px;
   }
   
   .logo-carousel-item {
     flex-shrink: 0;
-    width: 180px;
+    width: 140px;
     height: auto;
-    max-height: 120px;
+    max-height: 90px;
     object-fit: contain;
     display: block;
     vertical-align: middle;
@@ -1972,8 +1972,8 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
   }
   100% {
     /* Move exactly the width of 5 logos + 4 gaps */
-    /* Calculation: (180px × 5) + (40px × 4) = 900px + 160px = 1060px */
-    transform: translateX(-1060px);
+    /* Calculation: (140px × 5) + (12px × 4) = 700px + 48px = 748px */
+    transform: translateX(-748px);
   }
 }
 
