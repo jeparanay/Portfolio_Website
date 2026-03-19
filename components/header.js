@@ -172,7 +172,7 @@ class Header extends HTMLElement {
             <li class="videofeed"> <a href="feed.html">Creative Feed</a> </li>
             <li class="novideofeed"> <a href="feednovideo.html">Creative Feed</a> </li>
             <li> <a href="about.html">About Me</a> </li>
-            <li> <a href="images/resume/Julia_Nelson_Resume_2025.pdf" target="_blank">Resume</a></li>
+            <li> <a href="images/resume/Julia_Nelson_Resume_2026.pdf" target="_blank">Resume</a></li>
   				</ul>
   			</nav>
         </div> 
