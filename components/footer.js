@@ -60,7 +60,7 @@ class Footer extends HTMLElement {
               <br><strong>By Night: </strong> Learning 3D Modeling, AI Tools & Crochet.</p>
               <!-- Left Col Text -->
               <p>I'm currently available for freelance design & art commissions. Message me for more information.</p>
-              <a href="mailto:jeparanay@comcast.net?Subject=Hello!" class="btn btn-dark" role="button" aria-pressed="true" target="_top"><span class="fa fa-envelope"></span>Say Hello!</a>
+              <a href="mailto:julianelsondesign@gmail.com?Subject=Hello!" class="btn btn-dark" role="button" aria-pressed="true" target="_top"><span class="fa fa-envelope"></span>Say Hello!</a>
             </div>
             <div class="offset-lg-3 offset-md-1 col-lg-2 col-md-3 mb-md-0 mt-xs-3">
               <h5>Find Me On</h5>
