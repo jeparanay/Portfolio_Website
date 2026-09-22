@@ -3595,6 +3595,7 @@ a.work-project-row:hover .work-project-link {
   .work-project-row {
     flex-direction: column;
     gap: 14px;
+    margin-top: 48px;
   }
 
   .work-project-thumb {
@@ -3702,7 +3703,12 @@ a.work-project-row:hover .work-project-link {
 }
 
 /* ── Floating section navigation (FAB) ──
-   A large green "next" button; a small "back" button appears once you've scrolled. */
+   A large green "next" button; a small "back" button appears once you've scrolled.
+   Hidden for now (getting in the way) — remove this rule to bring it back. */
+.section-fab {
+  display: none !important;
+}
+
 .section-fab {
   position: fixed;
   right: 20px;
