@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Option B — Bento Grid | Preview</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mosaic-shared.css" />
+    <style>
+      .mosaic-b {
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: 120px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 16px 16px 48px;
+      }
+
+      .mosaic-b .c3 { grid-column: span 3; }
+      .mosaic-b .c4 { grid-column: span 4; }
+      .mosaic-b .c5 { grid-column: span 5; }
+      .mosaic-b .c6 { grid-column: span 6; }
+      .mosaic-b .c8 { grid-column: span 8; }
+      .mosaic-b .r2 { grid-row: span 2; }
+      .mosaic-b .r3 { grid-row: span 3; }
+
+      .about-tile {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .about-tile .profile-circle {
+        width: 88px;
+        height: 88px;
+        margin: 0;
+      }
+
+      .about-tile .about-title {
+        font-size: 1.35rem;
+      }
+
+      .about-tile .about-blurb {
+        font-size: 0.88rem;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 992px) {
+        .mosaic-b {
+          grid-template-columns: repeat(6, 1fr);
+          grid-auto-rows: 160px;
+        }
+        .mosaic-b .c3,
+        .mosaic-b .c4,
+        .mosaic-b .c5,
+        .mosaic-b .c6,
+        .mosaic-b .c8 {
+          grid-column: span 6;
+        }
+        .about-tile {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .about-tile .profile-circle {
+          margin: 0 auto;
+        }
+      }
+
+      @media (max-width: 540px) {
+        .mosaic-b {
+          grid-template-columns: 1fr;
+        }
+        .mosaic-b .c3,
+        .mosaic-b .c4,
+        .mosaic-b .c5,
+        .mosaic-b .c6,
+        .mosaic-b .c8 {
+          grid-column: span 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preview-banner">
+      <span><strong>Preview only</strong> — Option B: Bento grid</span>
+      <nav>
+        <a href="index.html">All options</a>
+        <a href="option-a-sidebar.html">Option A</a>
+        <a href="option-c-gallery.html">Option C</a>
+      </nav>
+    </div>
+
+    <header class="mini-header">
+      <span class="logo">Julia Nelson</span>
+      <nav class="mini-nav">
+        <a href="#" class="active">Work</a>
+        <a href="../feed.html">Creative Feed</a>
+        <a href="../images/resume/Julia_Nelson_Resume_2026.pdf" target="_blank">Resume</a>
+      </nav>
+    </header>
+
+    <main class="mosaic mosaic-b">
+      <!-- About as a bento tile -->
+      <article class="mosaic-card is-about c5 r3">
+        <div class="card-overlay about-tile">
+          <div class="profile-circle">
+            <img src="../images/about/julianelson.jpeg" alt="Julia Nelson" />
+          </div>
+          <div>
+            <p class="about-kicker">Hey there, I'm Julia</p>
+            <h1 class="about-title">Product designer for complex systems</h1>
+            <p class="about-blurb">
+              A hybrid physical–digital designer specializing in logistics, autonomy, and
+              engineering-driven products. Boston-based, 10+ years.
+            </p>
+            <p class="about-meta">Principal Product Designer · Boston</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Featured new work -->
+      <article class="mosaic-card is-placeholder c4 r3">
+        <div class="card-bg" style="background: linear-gradient(160deg, #243d32, #568056 60%, #89deca);"></div>
+        <div class="card-overlay">
+          <h3 class="card-title">Driver Delivery Optimization</h3>
+          <div class="card-tags">
+            <span class="tag">Logistics</span>
+            <span class="tag">Speed to deliver</span>
+            <span class="tag">Fortune 5</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="mosaic-card is-placeholder c3 r2">
+        <div class="card-bg" style="background: linear-gradient(160deg, #2c2c44, #5c6bc0);"></div>
+        <div class="card-overlay">
+          <h3 class="card-title">Package Return Kiosk</h3>
+          <div class="card-tags">
+            <span class="tag">Kiosk UX</span>
+            <span class="tag">Returns</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="mosaic-card c3 r2">
+        <img src="../home-images/rva_cover.jpg" alt="RVA" />
+        <div class="card-overlay">
+          <h3 class="card-title">Remote Vehicle Assistance</h3>
+          <div class="card-tags"><span class="tag">Case study</span></div>
+        </div>
+        <a class="card-link" href="../rva.html"></a>
+      </article>
+
+      <article class="mosaic-card is-placeholder c4 r2">
+        <div class="card-bg" style="background: linear-gradient(160deg, #333, #777);"></div>
+        <div class="card-overlay">
+          <h3 class="card-title">Aerospace Test Machine Ops</h3>
+          <div class="card-tags">
+            <span class="tag">Screen design</span>
+            <span class="tag">Workflow</span>
+            <span class="tag">Operations users</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="mosaic-card is-placeholder c4 r2">
+        <div class="card-bg" style="background: linear-gradient(160deg, #0d2b36, #058a8e);"></div>
+        <div class="card-overlay">
+          <h3 class="card-title">Last Mile Automation</h3>
+          <div class="card-tags">
+            <span class="tag">Drones</span>
+            <span class="tag">Delivery bots</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="mosaic-card c4 r2">
+        <img src="../home-images/fm_cover2.jpg" alt="Fleet Monitoring" />
+        <div class="card-overlay">
+          <h3 class="card-title">Fleet Monitoring Redesign</h3>
+          <div class="card-tags"><span class="tag">Case study</span></div>
+        </div>
+        <a class="card-link" href="../fm_redesign.html"></a>
+      </article>
+
+      <article class="mosaic-card c4">
+        <img src="../home-images/wm_cover.png" alt="Icon set" />
+        <div class="card-overlay">
+          <h3 class="card-title">150+ Icon Set</h3>
+          <div class="card-tags"><span class="tag">Design system</span></div>
+        </div>
+        <a class="card-link" href="../wm.html"></a>
+      </article>
+
+      <article class="mosaic-card c4">
+        <img src="../images/bose/bose_cover.jpg" alt="Bose" />
+        <div class="card-overlay">
+          <h3 class="card-title">Bose Hear</h3>
+          <div class="card-tags"><span class="tag">Mobile</span></div>
+        </div>
+        <a class="card-link" href="../bose.html"></a>
+      </article>
+
+      <article class="mosaic-card c4">
+        <img src="../home-images/quote_cover.jpg" alt="Fidelity Quote" />
+        <div class="card-overlay">
+          <h3 class="card-title">Fidelity Quote</h3>
+          <div class="card-tags"><span class="tag">Finance</span></div>
+        </div>
+        <a class="card-link" href="../quote.html"></a>
+      </article>
+    </main>
+
+    <footer class="preview-footer">
+      About is part of the grid — no separate About page needed in this direction.
+    </footer>
+  </body>
+</html>

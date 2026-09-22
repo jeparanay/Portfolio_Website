@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Option C — Gallery First | Preview</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mosaic-shared.css" />
+    <style>
+      .intro-strip {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 28px 24px 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .intro-strip .profile-circle {
+        width: 64px;
+        height: 64px;
+        margin: 0;
+        flex-shrink: 0;
+      }
+
+      .intro-strip .intro-text {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .intro-strip h1 {
+        margin: 0 0 4px;
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }
+
+      .intro-strip .role {
+        margin: 0;
+        color: #568056;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-weight: 600;
+      }
+
+      .intro-strip .one-liner {
+        margin: 8px 0 0;
+        color: #555;
+        font-size: 0.95rem;
+        max-width: 560px;
+      }
+
+      .intro-strip .intro-nav {
+        display: flex;
+        gap: 20px;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+      }
+
+      .mosaic-c {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: 220px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 16px 48px;
+      }
+
+      .mosaic-c .wide { grid-column: span 2; }
+      .mosaic-c .tall { grid-row: span 2; }
+      .mosaic-c .hero { grid-column: span 2; grid-row: span 2; }
+
+      .mosaic-c .mosaic-card .card-title {
+        font-size: 1rem;
+      }
+
+      @media (max-width: 900px) {
+        .intro-strip {
+          flex-wrap: wrap;
+        }
+        .intro-strip .intro-nav {
+          width: 100%;
+        }
+        .mosaic-c {
+          grid-template-columns: repeat(2, 1fr);
+          grid-auto-rows: 200px;
+        }
+        .mosaic-c .hero {
+          grid-column: span 2;
+          grid-row: span 1;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .mosaic-c {
+          grid-template-columns: 1fr;
+        }
+        .mosaic-c .wide,
+        .mosaic-c .hero {
+          grid-column: span 1;
+        }
+        .mosaic-c .tall {
+          grid-row: span 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preview-banner">
+      <span><strong>Preview only</strong> — Option C: Gallery first</span>
+      <nav>
+        <a href="index.html">All options</a>
+        <a href="option-a-sidebar.html">Option A</a>
+        <a href="option-b-bento.html">Option B</a>
+      </nav>
+    </div>
+
+    <section class="intro-strip">
+      <div class="profile-circle">
+        <img src="../images/about/julianelson.jpeg" alt="Julia Nelson" />
+      </div>
+      <div class="intro-text">
+        <p class="role">Principal Product Designer</p>
+        <h1>Julia Nelson</h1>
+        <p class="one-liner">
+          Designing for logistics, autonomy, and complex operations — Boston, 10+ years.
+        </p>
+      </div>
+      <nav class="intro-nav mini-nav">
+        <a href="#" class="active">Work</a>
+        <a href="../feed.html">Creative Feed</a>
+        <a href="../images/resume/Julia_Nelson_Resume_2026.pdf" target="_blank">Resume</a>
+      </nav>
+    </section>
+
+    <main class="mosaic mosaic-c">
+      <article class="mosaic-card is-placeholder hero">
+        <div class="card-bg" style="background: linear-gradient(135deg, #1e3d32, #568056, #7aab7a);"></div>
+        <div class="card-overlay">
+          <h3 class="card-title">Driver Delivery Optimization</h3>
+          <div class="card-tags">
+            <span class="tag">Logistics</span>
+            <span class="tag">Mobile UX</span>
+            <span class="tag">Fortune 5</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="mosaic-card hero">
+        <img src="../home-images/rva_cover.jpg" alt="RVA" />
+        <div class="card-overlay">
+          <h3 class="card-title">Remote Vehicle Assistance</h3>
+          <div class="card-tags"><span class="tag">Autonomy</span><span class="tag">Leadership</span></div>
+        </div>
+        <a class="card-link" href="../rva.html"></a>
+      </article>
+
+      <article class="mosaic-card is-placeholder wide">
+        <div class="card-bg" style="background: linear-gradient(135deg, #2a2a42, #6366b8);"></div>
+        <div class="card-overlay">
+          <h3 class="card-title">Package Return Kiosk</h3>
+          <div class="card-tags">
+            <span class="tag">Kiosk</span>
+            <span class="tag">Self-service</span>
+            <span class="tag">Retail</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="mosaic-card wide">
+        <img src="../home-images/fm_cover2.jpg" alt="Fleet Monitoring" />
+        <div class="card-overlay">
+          <h3 class="card-title">Fleet Monitoring Redesign</h3>
+          <div class="card-tags"><span class="tag">Operations</span></div>
+        </div>
+        <a class="card-link" href="../fm_redesign.html"></a>
+      </article>
+
+      <article class="mosaic-card is-placeholder tall">
+        <div class="card-bg" style="background: linear-gradient(180deg, #444, #888);"></div>
+        <div class="card-overlay">
+          <h3 class="card-title">Aerospace Test Operations</h3>
+          <div class="card-tags">
+            <span class="tag">Industrial UX</span>
+            <span class="tag">Workflow</span>
+            <span class="tag">Test machine</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="mosaic-card is-placeholder">
+        <div class="card-bg" style="background: linear-gradient(135deg, #0a2830, #058a8e);"></div>
+        <div class="card-overlay">
+          <h3 class="card-title">Last Mile Automation</h3>
+          <div class="card-tags">
+            <span class="tag">Drones</span>
+            <span class="tag">Bots</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="mosaic-card">
+        <img src="../home-images/wm_cover.png" alt="Icons" />
+        <div class="card-overlay">
+          <h3 class="card-title">150+ Icon Set</h3>
+          <div class="card-tags"><span class="tag">Design system</span></div>
+        </div>
+        <a class="card-link" href="../wm.html"></a>
+      </article>
+
+      <article class="mosaic-card">
+        <img src="../images/bose/bose_cover.jpg" alt="Bose" />
+        <div class="card-overlay">
+          <h3 class="card-title">Bose Hear</h3>
+          <div class="card-tags"><span class="tag">Mobile</span></div>
+        </div>
+        <a class="card-link" href="../bose.html"></a>
+      </article>
+
+      <article class="mosaic-card wide">
+        <img src="../home-images/insurance_cover4.jpg" alt="Insurance" />
+        <div class="card-overlay">
+          <h3 class="card-title">Insurance Gamification</h3>
+          <div class="card-tags"><span class="tag">Gamification</span></div>
+        </div>
+        <a class="card-link" href="../insurancegamification.html"></a>
+      </article>
+
+      <article class="mosaic-card">
+        <img src="../home-images/liaison-cover.jpg" alt="Liaison" />
+        <div class="card-overlay">
+          <h3 class="card-title">Degree Program Search</h3>
+          <div class="card-tags"><span class="tag">Web</span></div>
+        </div>
+        <a class="card-link" href="../liaison.html"></a>
+      </article>
+    </main>
+
+    <footer class="preview-footer">
+      Slim intro, dense mosaic — closest to a curated gallery mini site.
+    </footer>
+  </body>
+</html>

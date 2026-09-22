@@ -57,7 +57,7 @@ $(document).ready(function () {
     // Wait for hero text animations to complete (last one finishes around 1.4s)
     function fadeInFirstRow() {
       // Get the first row - typically the first 2 projects (col-lg-6 each)
-      const firstRowCards = Array.from(allCards).slice(0, 2);
+      const firstRowCards = Array.from(allCards).slice(0, 3);
       
       // Hero text animations: line (0.2s), name (0.4s), role (0.6s), description (0.8s + 0.6s = 1.4s)
       // Start images after hero animations complete, around 1.5s
@@ -107,56 +107,6 @@ $(document).ready(function () {
 
   // Initialize scroll animations
   initScrollAnimations();
-
-  // Typewriter effect for hero role text
-  function initTypewriter() {
-    const words = ['Product', 'User Experience'];
-    let wordIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    const typewriterElement = document.getElementById('typewriter-text');
-    
-    if (!typewriterElement) return;
-
-    function type() {
-      const currentWord = words[wordIndex];
-      
-      if (isDeleting) {
-        // Remove character
-        typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
-        charIndex--;
-        
-        if (charIndex === 0) {
-          isDeleting = false;
-          wordIndex = (wordIndex + 1) % words.length;
-          setTimeout(type, 500); // Pause before typing next word
-          return;
-        }
-      } else {
-        // Add character
-        typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
-        charIndex++;
-        
-        if (charIndex === currentWord.length) {
-          isDeleting = true;
-          setTimeout(type, 2000); // Pause at complete word
-          return;
-        }
-      }
-      
-      // Typing speed
-      const typingSpeed = isDeleting ? 100 : 150;
-      setTimeout(type, typingSpeed);
-    }
-    
-    // Start typing after hero animations complete (around 1.5s)
-    setTimeout(function() {
-      type();
-    }, 1500);
-  }
-
-  // Initialize typewriter effect
-  initTypewriter();
 });
 
 // Toggle work description expand/collapse

@@ -167,12 +167,11 @@ class Header extends HTMLElement {
         <h1 class="h6"><strong><a href="index.html">Julia Nelson</a></strong></h1>
   			<nav class='hamburgernav'>
   				<ul>
-  					<li> <a href="index.html">Design Work</a> </li>
+  					<li> <a href="index.html">Portfolio</a> </li>
             <!-- <li> <a href="gdprojects.html">Other Projects</a></li> -->
             <li class="videofeed"> <a href="feed.html">Creative Feed</a> </li>
             <li class="novideofeed"> <a href="feednovideo.html">Creative Feed</a> </li>
-            <li> <a href="about.html">About Me</a> </li>
-            <li> <a href="images/resume/Julia_Nelson_Resume_2026.pdf" target="_blank">Resume</a></li>
+            <li> <a href="images/resume/Julia-Nelson_Resume-2026.pdf" target="_blank">Resume</a></li>
   				</ul>
   			</nav>
         </div> 

@@ -94,7 +94,7 @@ class Footer extends HTMLElement {
             </div>
           </div>
         </div>
-        <div class="footer-copyright text-center mb-3"> &copy; 2025 Copyright: Website designed and developed by Julia Nelson (Paranay)</div>
+        <div class="footer-copyright text-center mb-3"> &copy; 2026 Copyright: Website designed and developed by Julia Nelson (Paranay)</div>
       </footer>
       <!-- Footer -->
     `;

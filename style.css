@@ -373,9 +373,108 @@ NEXT / Last
 Professional Hero Introduction
 ***********************/
 .hero-intro {
-  padding: 200px 40px 120px;
+  padding: 180px 40px 0;
   position: relative;
-  overflow: hidden;
+  min-height: min(calc(100vw * 0.5615), 85vh);
+}
+
+.hero-bg-photo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  bottom: 0;
+  background: url('images/homepage/research.png') center top / cover no-repeat;
+  z-index: 0;
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(255, 255, 255, 0.82) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  z-index: 0;
+}
+
+.project-grid-overlap {
+  position: relative;
+  z-index: 2;
+  margin-top: calc(75vh - min(100vw * 0.5615, 85vh));
+}
+
+.hero-stats-bar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 80px;
+  border-top: 1px solid #e0e0e0;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(4px);
+  padding: 36px 40px;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.hero-stat-number {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.hero-stat-label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-stat-divider {
+  width: 1px;
+  height: 48px;
+  background: #e0e0e0;
+  flex-shrink: 0;
+}
+
+.hero-statement {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #4a4a4a;
+  margin: 16px 0 0;
+  max-width: 600px;
+  line-height: 1.8;
+  opacity: 0;
+  animation: fadeIn 0.6s ease 1s forwards;
+}
+
+@media (min-width: 992px) {
+  .hero-statement {
+    font-size: 1.35rem;
+    line-height: 1.9;
+  }
 }
 
 .hero-content-wrapper {
@@ -421,25 +520,6 @@ Professional Hero Introduction
   text-transform: uppercase;
   opacity: 0;
   animation: fadeIn 0.6s ease 0.6s forwards;
-}
-
-#typewriter-text {
-  display: inline-block;
-}
-
-#typewriter-text::after {
-  content: '|';
-  animation: blink 1s step-end infinite;
-  margin-left: 0;
-}
-
-@keyframes blink {
-  0%, 50% {
-    opacity: 1;
-  }
-  51%, 100% {
-    opacity: 0;
-  }
 }
 
 .hero-description {
@@ -1355,7 +1435,7 @@ PROJECT PAGES - Professional Template
 }
 
 .links-section {
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -1694,18 +1774,35 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
 
 .about-hero-title {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 3.5rem;
+  font-size: 2.6rem;
   font-weight: 700;
   color: #1a1a1a;
-  margin: 0 0 30px 0;
+  margin: 0 0 10px 0;
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
 
 @media (min-width: 992px) {
   .about-hero-title {
-    font-size: 4.5rem;
-    margin-bottom: 40px;
+    font-size: 3.25rem;
+    margin-bottom: 14px;
+  }
+}
+
+.about-hero-role {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: #568056;
+  margin: 0 0 24px 0;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .about-hero-role {
+    font-size: 1.55rem;
+    margin-bottom: 30px;
   }
 }
 
@@ -2064,7 +2161,7 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
   background: transparent;
   border: none;
   padding: 0;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   box-shadow: none;
   overflow: visible;
   position: relative;
@@ -2184,6 +2281,37 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
     font-size: 1.05rem;
     line-height: 1.8;
   }
+}
+
+.work-project-block {
+  margin-top: 28px;
+}
+
+.work-projects-subheader {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1a1a1a;
+  margin: 24px 0 4px 0;
+}
+
+.work-project-block:first-child {
+  margin-top: 20px;
+}
+
+.work-project-title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 10px 0;
+  line-height: 1.35;
+}
+
+.work-project-block .work-description-new {
+  margin-bottom: 0;
 }
 
 .work-industries {
@@ -2427,7 +2555,6 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
 .about-learning-section {
   padding: 120px 0;
   background: #ffffff;
-  border-bottom: 1px solid #e8e8e8;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -2765,7 +2892,7 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
   }
 
   .work-card-new {
-    margin-bottom: 60px;
+    margin-bottom: 120px;
   }
 
   .work-card-header-new h3 {
@@ -3346,5 +3473,312 @@ About V2
   }
   .v2-beyond-grid {
     grid-template-columns: 1fr;
+  }
+}
+/* ── Recent Projects Toggle ── */
+.work-projects-toggle {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 2px 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 24px 0 0;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.work-projects-toggle:focus {
+  outline: none;
+}
+
+.work-projects-toggle:focus-visible {
+  outline: 2px solid #6b7d47;
+  outline-offset: 2px;
+}
+
+.work-projects-toggle:hover {
+  color: #568056;
+  border-bottom-color: #568056;
+}
+
+.projects-toggle-arrow {
+  font-style: normal;
+  font-size: 0.85rem;
+  transition: transform 0.2s ease;
+}
+
+.work-projects-expandable {
+  margin-top: 20px;
+}
+
+/* ── Project rows under each job (resume-style home) ── */
+.work-projects-list {
+  margin-top: 36px;
+}
+
+.work-project-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  margin-top: 28px;
+  color: inherit;
+  text-decoration: none;
+}
+
+a.work-project-row:hover,
+a.work-project-row:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.work-project-thumb {
+  flex: 0 0 260px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f0f0ee;
+  aspect-ratio: 16 / 10;
+}
+
+.work-project-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+a.work-project-row:hover .work-project-thumb img {
+  transform: scale(1.04);
+}
+
+.work-project-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.work-project-info .work-project-title {
+  transition: color 0.2s ease;
+}
+
+.work-project-info .work-description-new {
+  margin-bottom: 10px;
+}
+
+a.work-project-row:hover .work-project-title {
+  color: #568056;
+}
+
+.work-project-link {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a.work-project-row:hover .work-project-link {
+  color: #568056;
+  border-bottom-color: #568056;
+}
+
+@media (max-width: 640px) {
+  .work-project-row {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .work-project-thumb {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* Company name as the card heading, job title beneath */
+.work-card-header-new h3 .work-company-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.work-card-header-new h3 .work-company-link:hover {
+  color: #568056;
+}
+
+.work-title-line {
+  color: #444;
+}
+
+.work-projects-list + .work-focus-new {
+  margin-top: 40px;
+}
+
+/* Photo between the Experience heading and the first job.
+   Same width rules as the timeline / Life images (max 1400px, 40px side padding). */
+.experience-image {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto 120px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.experience-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  .experience-image {
+    max-width: 900px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-image {
+    padding: 0 15px;
+  }
+}
+
+/* ── Show only the first two companies until "Show More Experience" is clicked ── */
+.work-more-experience {
+  display: none;
+  outline: none;
+}
+
+.work-more-experience-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px; /* pulls the button up under the last visible company */
+}
+
+.work-more-experience-btn {
+  background: none;
+  border: 1px solid #1a1a1a;
+  border-radius: 40px;
+  padding: 14px 32px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.work-more-experience-btn:hover {
+  color: #568056;
+  border-color: #568056;
+}
+
+.work-more-experience-btn:focus {
+  outline: none;
+}
+
+.work-more-experience-btn:focus-visible {
+  outline: 2px solid #6b7d47;
+  outline-offset: 2px;
+}
+
+.about-work-section.show-all-experience .work-more-experience {
+  display: block;
+}
+
+/* expanded: the same button sits below the last company and collapses the list */
+.about-work-section.show-all-experience .work-more-experience-cta {
+  margin-top: 60px;
+}
+
+/* ── Floating section navigation (FAB) ──
+   A large green "next" button; a small "back" button appears once you've scrolled. */
+.section-fab {
+  position: fixed;
+  right: 20px;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  z-index: 90;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+}
+
+.fab-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+              opacity 0.2s ease, transform 0.2s ease;
+}
+
+.fab-btn:focus-visible {
+  outline: 2px solid #6b7d47;
+  outline-offset: 3px;
+}
+
+.fab-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+.fab-down {
+  width: 56px;
+  height: 56px;
+  border: none;
+  background: #6b7d47;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.fab-down:hover {
+  background: #568056;
+  transform: translateY(2px);
+}
+
+.fab-up {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fab-up:hover {
+  color: #568056;
+  border-color: #568056;
+}
+
+/* at the very top there's nothing to go back to, so the small button tucks away */
+.section-fab.at-top .fab-up {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .section-fab {
+    right: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fab-btn {
+    transition: none;
   }
 }
