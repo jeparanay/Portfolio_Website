@@ -851,6 +851,11 @@ PROJECT PAGES - Professional Template
   }
 }
 
+/* Variant for pages with only 3 info cards, so they don't leave an empty slot */
+.info-cards-3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 .info-card {
   background: #ffffff;
   border: 1px solid #e0e0e0;
@@ -875,6 +880,19 @@ PROJECT PAGES - Professional Template
   margin: 0 0 15px 0;
 }
 
+/* Same eyebrow style as the info-card labels (My Role, Timeline, etc.), for use outside a card.
+   Scoped with a parent class so it beats .section-content p's font-size/color. */
+.section-content .eyebrow-label {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #999;
+  text-align: center;
+  margin: 40px 0 8px 0;
+}
+
 .info-card p {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1rem;
@@ -882,6 +900,87 @@ PROJECT PAGES - Professional Template
   color: #1a1a1a;
   margin: 0 0 5px 0;
   line-height: 1.4;
+}
+
+.tool-icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.tool-icon-row img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Design Toolkit — a full row of larger tool icons with labels beneath */
+.toolkit-title {
+  text-align: center;
+}
+
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.toolkit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.toolkit-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  margin-bottom: 16px;
+}
+
+.toolkit-icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  /* icons are single-color black SVGs; invert to white so they read on a colored tile */
+  filter: brightness(0) invert(1);
+}
+
+.toolkit-item h5 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 4px 0;
+}
+
+.toolkit-item p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.85rem;
+  color: #777;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .toolkit-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .toolkit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .info-card .info-detail {
@@ -1067,6 +1166,42 @@ PROJECT PAGES - Professional Template
   text-decoration-color: #568056;
 }
 
+/* Four cards in a row, e.g. RVA's Overview responsibilities */
+.overview-callout-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.overview-callout-grid .callout-item,
+.motional-page .overview-callout-grid .callout-item {
+  padding: 20px;
+  border-top: none;
+}
+
+.overview-callout-grid .callout-item h5 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.overview-callout-grid .callout-item p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .overview-callout-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .overview-callout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .achievement {
   font-weight: 600;
   color: #1a1a1a;
@@ -1075,51 +1210,6 @@ PROJECT PAGES - Professional Template
 }
 
 /* Process Grid */
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  margin: 30px 0;
-}
-
-.process-item {
-  position: relative;
-  padding: 30px;
-  background: white;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.process-item:hover {
-  border-color: #568056;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transform: translateY(-4px);
-}
-
-.process-number {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #e0e0e0;
-  line-height: 1;
-  margin-bottom: 15px;
-}
-
-.process-item h5 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0 0 15px 0;
-}
-
-.process-item p {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: #555;
-  margin-bottom: 12px;
-}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -1230,6 +1320,39 @@ PROJECT PAGES - Professional Template
   border-top: 5px solid #5B49F3;
 }
 
+/* RVA page: no purple top border on any callout cards */
+.rva-page .callout-item {
+  border-top: none;
+}
+
+/* RVA page: no purple side border on the other card styles either */
+.rva-page .callout-box,
+.rva-page .stat-highlight {
+  border-left: none;
+}
+
+/* RVA page: plain bullets instead of checkmarks */
+.rva-page .callout-box ul li:before,
+.rva-page .leadership-list li:before {
+  content: none;
+}
+
+.rva-page .callout-box ul,
+.rva-page .leadership-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.rva-page .callout-box ul li,
+.rva-page .leadership-list li {
+  padding-left: 6px;
+}
+
+/* RVA page: no purple first-letter accent on achievement lines */
+.motional-page.rva-page .achievement::first-letter {
+  color: inherit;
+}
+
 .motional-page .achievement {
   color: #1a1a1a;
   position: relative;
@@ -1237,10 +1360,6 @@ PROJECT PAGES - Professional Template
 
 .motional-page .achievement::first-letter {
   color: #5B49F3;
-}
-
-.motional-page .process-item:hover {
-  border-color: #5B49F3;
 }
 
 .motional-page .method-tag i {
