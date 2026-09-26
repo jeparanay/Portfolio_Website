@@ -42,6 +42,42 @@ $(document).ready(function () {
     }
   });
 
+  //Keyboard-navigation tip: shown once ever, the first time a visitor lands on
+  //any project page (identified by having both a "previous" and "next" link).
+  //Persisted in localStorage, so it won't show again unless they clear site data.
+  //Desktop only (arrow-key navigation isn't relevant on a touch/mobile layout) -
+  //a mobile visit doesn't consume the flag, so a later desktop visit still shows it.
+  if ($(".previous").length && $(".next").length && window.innerWidth > 768) {
+    try {
+      if (!localStorage.getItem("keyboardTipSeen")) {
+        localStorage.setItem("keyboardTipSeen", "1");
+
+        var $tip = $(
+          '<div class="keyboard-tip">' +
+            '<div class="keyboard-tip-arrows">← →</div>' +
+            '<div class="keyboard-tip-text">Use arrow keys to switch projects</div>' +
+          '</div>'
+        );
+        $("body").append($tip);
+
+        // Force a reflow so the browser registers the opacity:0 starting state
+        // before we add the class that transitions it in (avoids relying on
+        // requestAnimationFrame, which browsers pause in a backgrounded tab).
+        $tip[0].offsetHeight;
+        $tip.addClass("keyboard-tip-visible");
+
+        setTimeout(function () {
+          $tip.removeClass("keyboard-tip-visible");
+          setTimeout(function () {
+            $tip.remove();
+          }, 400); // matches the CSS opacity transition duration
+        }, 5000);
+      }
+    } catch (e) {
+      // localStorage unavailable (e.g. private browsing) - skip the tip silently.
+    }
+  }
+
   //Hamburger Nav on click
   $(".hamburger").on("click", function () {
     $(".header .hamburgernav")

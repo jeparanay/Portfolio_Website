@@ -39,6 +39,9 @@ class Footer extends HTMLElement {
       	background-image: none;
       	border-color: #343a40;
       }
+      footer .btn {
+      	border-radius: 0;
+      }
       footer .btn-dark:hover {
       	background-color: #568056;
       	border-color: #568056;

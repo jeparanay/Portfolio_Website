@@ -369,6 +369,39 @@ NEXT / Last
   text-decoration: none;
 }
 
+.keyboard-tip {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 16px 28px;
+  border-radius: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-align: center;
+  max-width: 85vw;
+  z-index: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.keyboard-tip.keyboard-tip-visible {
+  opacity: 1;
+}
+
+.keyboard-tip-arrows {
+  font-size: 1.5rem;
+  letter-spacing: 0.3em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.keyboard-tip-text {
+  font-size: 0.95rem;
+}
+
 /**********************
 Professional Hero Introduction
 ***********************/
@@ -1845,7 +1878,6 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
   background: #ffffff;
   padding: 0;
   display: inline-block;
-  border: 1px solid #e8e8e8;
   position: relative;
 }
 
@@ -1878,13 +1910,47 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
   }
 }
 
-.about-profile-img {
+/* The round mask drifts a few px, like the other moving shapes on this page.
+   The photo inside counter-drifts by the exact opposite amount, so its actual
+   content stays visually anchored - only the circular "window" onto it moves. */
+.about-profile-mask {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  animation: profile-frame-drift 20s ease-in-out infinite;
+}
+
+.about-profile-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 106%;
+  height: 106%;
   object-fit: cover;
   object-position: center;
   display: block;
+  animation: profile-img-counter-drift 20s ease-in-out infinite;
+}
+
+@keyframes profile-frame-drift {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(4px, -3px); }
+  66% { transform: translate(-3px, 4px); }
+}
+
+@keyframes profile-img-counter-drift {
+  0%, 100% { transform: translate(-50%, -50%) translate(0, 0); }
+  33% { transform: translate(-50%, -50%) translate(-4px, 3px); }
+  66% { transform: translate(-50%, -50%) translate(3px, -4px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-profile-mask,
+  .about-profile-img {
+    animation: none;
+  }
 }
 
 .about-hero-text {
@@ -2445,7 +2511,6 @@ about page - EDITORIAL STYLE WITH GREEN BLOBS
   padding: 6px 12px;
   background: rgba(86, 128, 86, 0.1);
   border: 1px solid rgba(86, 128, 86, 0.25);
-  border-radius: 6px;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 0.8rem;
   font-weight: 500;
@@ -3660,7 +3725,6 @@ a.work-project-row:focus {
 
 .work-project-thumb {
   flex: 0 0 260px;
-  border-radius: 8px;
   overflow: hidden;
   background: #f0f0ee;
   aspect-ratio: 16 / 10;
